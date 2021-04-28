@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 import { environment } from 'src/environments/environment';
+import { PageAcceuilComponent } from './page-acceuil/page-acceuil.component';
 import { PageChoreoComponent } from './page-choreo/page-choreo.component';
 import { PageErreurComponent } from './page-erreur/page-erreur.component';
 import { PagePeinturesComponent } from './page-peintures/page-peintures.component';
@@ -42,11 +43,11 @@ class BasicData implements SeoData {
 }
 
 const routes: TypedRoutes = [
-  { path: '', pathMatch:'full',
+  { path: '', pathMatch:'full', component: PageAcceuilComponent,
     data: new BasicData('')
   },
-  { path: 'choreographies', component: PageChoreoComponent,
-    data: new BasicData('choreographies')
+  { path: 'choregraphies', component: PageChoreoComponent,
+    data: new BasicData('choregraphies')
   },
   { path: 'gallerie', component: PagePeinturesComponent,
     data: new BasicData('gallerie')

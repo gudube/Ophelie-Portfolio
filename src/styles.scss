@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+//Default variables
+:root {
+	--primary-text-color: white;
+	--background-color: #424242;
+	--accent-color: #F56600;
+	--hovered-color: #BABABA;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, a, p, span, div {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+  }
