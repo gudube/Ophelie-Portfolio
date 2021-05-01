@@ -3,25 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PageChoreoComponent } from './page-choreo/page-choreo.component';
-import { PagePeinturesComponent } from './page-peintures/page-peintures.component';
+import { PagesModule } from './pages/pages.module';
 import { SeoService } from './seo-service.service';
-import { PageErreurComponent } from './page-erreur/page-erreur.component';
-import { PageAcceuilComponent } from './page-acceuil/page-acceuil.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './ui-tools/header/header.component';
+import { UiToolsModule } from './ui-tools/ui-tools.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageChoreoComponent,
-    PagePeinturesComponent,
-    PageErreurComponent,
-    PageAcceuilComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule,
+    UiToolsModule
   ],
   providers: [SeoService],
   bootstrap: [AppComponent]

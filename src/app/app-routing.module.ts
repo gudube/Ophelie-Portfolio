@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 import { environment } from 'src/environments/environment';
-import { PageAcceuilComponent } from './page-acceuil/page-acceuil.component';
-import { PageChoreoComponent } from './page-choreo/page-choreo.component';
-import { PageErreurComponent } from './page-erreur/page-erreur.component';
-import { PagePeinturesComponent } from './page-peintures/page-peintures.component';
+import { PageAcceuilComponent } from './pages/page-acceuil/page-acceuil.component';
+import { PageChoreoComponent } from './pages/page-choreo/page-choreo.component';
+import { PageErreurComponent } from './pages/page-erreur/page-erreur.component';
+import { PagePeinturesComponent } from './pages/page-peintures/page-peintures.component';
 
 type TypedRoutes = TypedRoute[]
 

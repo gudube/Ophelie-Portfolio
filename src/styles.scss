@@ -3,16 +3,63 @@
 //Default variables
 :root {
 	--primary-text-color: white;
-	--background-color: #424242;
+	--background-color: #131313;
 	--accent-color: #F56600;
 	--hovered-color: #BABABA;
+	--hoverable-color: white;
+	--disabled-color: rgba(255, 255, 255, 0.3);
+
+    --hoverable-opacity: 1;
+	--hovered-opacity: 0.6;
 }
 
 body {
     background-color: var(--background-color);
+    margin: 0;
 }
 
 h1, h2, h3, h4, a, p, span, div {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     color: var(--primary-text-color);
-  }
+    font-weight: 300;
+}
+
+.hoverable {
+	// cursor: pointer;
+	color: var(--hoverable-color);
+	a, p, h2, h3, h4, span {
+		color: inherit;
+	}
+	svg {
+		fill: var(--hoverable-color);
+	}
+	img {
+		opacity: var(--hoverable-opacity);
+	}
+	@media (hover: hover) {
+		color: var(--hoverable-color);
+        transition: color 0.2s;
+
+		a, p, h2, h3, h4, span {
+		    color: inherit;
+            transition: color 0.2s;
+		}
+		svg {
+			fill: var(--hoverable-color);
+            transition: fill 0.2s;
+		}
+		img {
+			opacity: var(--hoverable-opacity);
+            transition: opacity 0.2s;
+		}
+		&:hover {
+			color: var(--hovered-color);
+			svg {
+				fill: var(--hovered-color)
+			}
+			img {
+				opacity: var(--hovered-opacity);
+			}
+		}
+	}
+}

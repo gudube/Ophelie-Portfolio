@@ -13,17 +13,17 @@ ol {
     margin-right: auto;
     li {
         display: inline-block;
-        margin: 10px 20px;
         a {
+            padding: 10px 20px;
             text-decoration: none;
             font-weight: 300;
-            transition: color 0.2s;
+            // transition: color 0.2s;
         }
         &.active a {
             color: var(--accent-color);
         }
-        &:hover:not(.active) a{
-            color: var(--hovered-color);
-        }
+        // &:hover:not(.active) a{
+        //     color: var(--hovered-color);
+        // }
     }
 }
