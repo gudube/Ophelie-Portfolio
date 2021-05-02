@@ -8,7 +8,7 @@
 	align-items: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	box-sizing: border-box;
 
 	#contact-me {
@@ -23,6 +23,7 @@
 	#copyright, #copyright span {
 		color: var(--disabled-color);
 		font-size: 1em;
+		margin: 0;
 	}
 
 	#icons-container {
@@ -46,10 +47,10 @@
 	}
 
 	#contact-me, #icons-container {
-		flex-basis: 215px;
+		flex-basis: 175px;
 	}
 
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 700px) {
 		#copyright {
 			flex-grow: 1;
 			text-align: center;

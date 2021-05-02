@@ -1,0 +1,46 @@
+#main-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 2%;
+    box-sizing: border-box;
+    position: relative;
+    .title-video {
+        width: 100%;
+        z-index: 1;
+    }
+    .overlay {
+        //todo: change background-image to local
+        width: 100%;
+        height: 100%;
+        background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+        background-clip: content-box;
+        opacity: 75%;
+        z-index: 2;
+        position: absolute;
+        padding: inherit;
+        top:0;
+        left:0;
+        box-sizing: border-box;
+    }
+    #title-container {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top:50%;
+        left:0;
+        transform: translateY(-50%);
+        z-index: 3;
+        padding: inherit;
+        box-sizing: border-box;
+        h1 {
+            font-size: 15vw;
+            margin: 0;
+            text-shadow: 3px 3px 5px rgba(black, 0.2);
+        }
+        h2 {
+            font-size: 3vw;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(black, 0.2);
+        }
+    }
+}
