@@ -7,20 +7,20 @@ import { PageErreurComponent } from './page-erreur/page-erreur.component';
 import { PagePeinturesComponent } from './page-peintures/page-peintures.component';
 
 @NgModule({
-  declarations: [
-    PageChoreoComponent,
-    PagePeinturesComponent,
-    PageErreurComponent,
-    PageAcceuilComponent,
-  ],
-  imports: [
-    CommonModule,
-    UiToolsModule
-  ], exports: [
-    PageChoreoComponent,
-    PagePeinturesComponent,
-    PageErreurComponent,
-    PageAcceuilComponent,
-  ]
+	declarations: [
+		PageChoreoComponent,
+		PagePeinturesComponent,
+		PageErreurComponent,
+		PageAcceuilComponent,
+	],
+	imports: [
+		CommonModule,
+		UiToolsModule
+	], exports: [
+		PageChoreoComponent,
+		PagePeinturesComponent,
+		PageErreurComponent,
+		PageAcceuilComponent,
+	]
 })
 export class PagesModule { }

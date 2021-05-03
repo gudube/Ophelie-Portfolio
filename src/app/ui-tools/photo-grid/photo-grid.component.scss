@@ -1,0 +1,57 @@
+:host {
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#grid-view {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 50px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&.background-grid {
+		overflow: hidden;
+	}
+
+	.grid-cell {
+		height: 300px;
+		width: 300px;
+		margin: 20px;
+
+		.square-img-container {
+			margin: 0 auto;
+			height: 300px;
+			width: 300px;
+
+			overflow: hidden;
+			cursor: pointer;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+			}
+		}
+
+		@media (hover: hover) {
+			.square-img-container img {
+				transition: width 0.2s, height 0.2s, margin-left 0.2s, margin-top 0.2s;
+			}
+			&:hover {
+				.square-img-container {
+					box-shadow: 0 0 35px 5px rgba(white, 0.1);
+					img {
+						width: 102%;
+						height: 102%;
+						margin-left: -1%;
+						margin-top: -1%;
+					}
+				}
+			}
+		}
+	}
+}
