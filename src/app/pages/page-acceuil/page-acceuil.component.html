@@ -1,6 +1,8 @@
 <div id="main-container">
     <div class="title-video title-overlay"></div>
-    <video autoplay muted loop class="title-video" poster="assets/title/bg-video-poster.jpg">
+    <video playsinline autoplay muted loop onloadedmetadata="this.muted = true" oncanplay="this.play()"
+    class="title-video"
+    poster="assets/title/bg-video-poster.jpg">
         <source src="assets/title/bg-video.mp4"> <!--todo: change video-->
     </video>
     <div id="title-container">
