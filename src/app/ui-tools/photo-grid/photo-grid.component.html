@@ -6,9 +6,10 @@
 </full-image-viewer> -->
 
 <div id="grid-view"> <!--[ngClass]="{'background-grid': showingFullImage}">-->
-	<div class="grid-cell" *ngFor="let photo of photos; let index = index">
+	<div class="grid-cell" *ngFor="let picture of pictures; let index = index">
 		<div class="square-img-container"> <!--(click)="selectImage(index)">-->
-			<img src="{{photo}}" alt="photo: {{photo}}">
+			<div class="shadow"></div>
+			<img src="/assets/{{picture.fileName}}" alt="photo: {{picture.fileName}}">
 		</div>
 	</div>
 </div>

@@ -1,4 +1,5 @@
 import { Input, Component } from '@angular/core';
+import { PictureModel } from './picture-model';
 
 @Component({
 	selector: 'app-photo-grid',
@@ -8,7 +9,7 @@ import { Input, Component } from '@angular/core';
 export class PhotoGridComponent {
 	// @ViewChild(FullImageViewerComponent) public imageViewer: FullImageViewerComponent;
 
-	@Input() public photos: string[] = [];
+	@Input() public pictures: PictureModel[] = [];
 	// private _showingFullImage = false;
 	// public get showingFullImage(): boolean {
 	// 	return this._showingFullImage;
