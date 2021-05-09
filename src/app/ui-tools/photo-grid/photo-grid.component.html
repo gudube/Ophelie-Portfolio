@@ -8,7 +8,9 @@
 <div id="grid-view"> <!--[ngClass]="{'background-grid': showingFullImage}">-->
 	<div class="grid-cell" *ngFor="let picture of pictures; let index = index">
 		<div class="square-img-container"> <!--(click)="selectImage(index)">-->
-			<div class="shadow"></div>
+			<div class="shadow">
+				<p class="title">{{picture.title}}</p>
+			</div>
 			<img src="/assets/{{picture.fileName}}" alt="photo: {{picture.fileName}}">
 		</div>
 	</div>
