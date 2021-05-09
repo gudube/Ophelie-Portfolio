@@ -12,6 +12,10 @@ export class PagePeinturesComponent implements OnInit {
 		{ fileName: 'dessins/avatar.jpg', title: 'Avatar 2', description: '' },
 		{ fileName: 'dessins/avatar.jpg', title: 'Titre', description: '' },
 		{ fileName: 'dessins/avatar.jpg', title: 'Titre', description: '' },
+		{ fileName: 'dessins/avatar.jpg', title: 'Titre', description: '' },
+		{ fileName: 'dessins/avatar.jpg', title: 'Titre', description: '' },
+		{ fileName: 'dessins/avatar.jpg', title: 'Titre', description: '' },
+		{ fileName: 'dessins/avatar.jpg', title: 'Titre', description: '' },
 	];
 
 	constructor() { }

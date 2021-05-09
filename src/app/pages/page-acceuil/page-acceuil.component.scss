@@ -49,26 +49,3 @@
 #content {
     margin: 500px 100px;
 }
-
-.page-background {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    // todo: change backgrond image
-    background-image: url("/assets/background.jpg");
-    top:0;
-    left:0;
-    z-index: -10;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    opacity: 0.1;
-}
-
-.background-overlay {
-    // todo: change overlay background
-    background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
-    background-repeat: repeat;
-    background-size: auto;    
-    z-index: -9;
-    opacity: 0.7;
-}
