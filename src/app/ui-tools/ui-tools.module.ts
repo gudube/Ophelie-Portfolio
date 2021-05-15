@@ -5,6 +5,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FootnotesComponent } from './footnotes/footnotes.component';
 import { PhotoGridComponent } from './photo-grid/photo-grid.component';
 import { PageBackgroundComponent } from './page-background/page-background.component';
+import { SpotlightListComponent } from './spotlight-list/spotlight-list.component';
+import { SpotlightItemComponent } from './spotlight-item/spotlight-item.component';
 
 @NgModule({
 	declarations: [
@@ -12,6 +14,8 @@ import { PageBackgroundComponent } from './page-background/page-background.compo
 		FootnotesComponent,
 		PhotoGridComponent,
   		PageBackgroundComponent,
+		SpotlightListComponent,
+		SpotlightItemComponent,
 	],
 	imports: [
 		CommonModule,
@@ -22,6 +26,8 @@ import { PageBackgroundComponent } from './page-background/page-background.compo
 		FootnotesComponent,
 		PhotoGridComponent,
 		PageBackgroundComponent,
+		SpotlightListComponent,
+		SpotlightItemComponent,
 	],
 })
 export class UiToolsModule { }

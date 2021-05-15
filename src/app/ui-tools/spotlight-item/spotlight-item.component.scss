@@ -1,0 +1,113 @@
+.transparent-button {
+	background: transparent;
+	border: none;
+	padding: 0;
+	display: block;
+}
+
+#image-container {
+    height: 29vh;
+    min-height: 100px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+	cursor: pointer;
+
+	&:after {
+		//Adds a shadow over the image
+		content: "";
+		position: absolute;
+		width: 100%; height: 100%;
+		left: 0; top: 0;
+		background-color: rgba(0,0,0,0.3);
+		-moz-box-shadow:    inset 15px 15px 50px 0 black;
+		-webkit-box-shadow: inset 15px 15px 50px 0 black;
+		box-shadow:         inset 10px 10px 50px 5px black;
+
+		opacity: 0.7;
+		-webkit-transition: opacity 0.1s ease;
+		transition: opacity 0.1s ease;
+	}
+
+	#menu-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+	}
+
+	#text-container {
+		z-index: 2;
+		margin: 0;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+
+		opacity: var(--hovered-opacity);
+		color: var(--primary-text-color);
+		text-shadow: 0 0 4px rgba(0,0,0), 2px 2px 4px rgba(0,0,0);
+		-webkit-transition: text-shadow 0.1s ease;
+		transition: text-shadow 0.1s ease;
+
+		&.with-subtitle{
+		 	top: 45%;
+		 }
+
+		#title {
+			font-size: max(2rem, 7vh);
+		}
+
+		#subtitle {
+			width: 100%;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: max(1.3rem, 4vh);
+			margin-top: 0;
+			padding: 10px;
+			padding-top: 0;
+		}
+	}
+
+	&:focus {
+		outline: 0;
+		&:after {
+			opacity: 0; //Removes the shadow when hovering over item
+		}
+
+		#text-container {
+			//Changes title opacity when hovering item
+			opacity: var(--hovered-opacity);
+			text-shadow: 0 0 4px rgba(0,0,0), 2px 2px 4px rgba(0,0,0); //can remove if want better performance
+		}
+	}
+
+	@media(hover: hover){
+		#text-container{
+			text-shadow: 2px 2px 4px rgba(0,0,0);
+			opacity: var(--hoverable-opacity);
+		}
+
+		//#menu-image {
+			//filter: blur(2px);
+			//-webkit-filter: blur(2px);
+		//}
+
+		//when hovering
+		&:hover {
+			&:after {
+				opacity: 0; //Removes the shadow when hovering over item
+			}
+
+			#text-container {
+				//Changes title opacity when hovering item
+				opacity: var(--hovered-opacity);
+				text-shadow: 0 0 4px rgba(0,0,0), 2px 2px 4px rgba(0,0,0); //can remove if want better performance
+			}
+		}
+	}
+}

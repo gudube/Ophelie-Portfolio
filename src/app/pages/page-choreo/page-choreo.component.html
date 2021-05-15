@@ -1,1 +1,5 @@
-<p>page-choreo works!</p>
+<app-spotlight-list>
+    <app-spotlight-item
+        *ngFor="let projet of projets" [content]=projet
+    ></app-spotlight-item>
+</app-spotlight-list>

@@ -1,0 +1,11 @@
+<button id="image-container" class="transparent-button">
+	<div id="text-container" [ngClass]="{'with-subtitle': !!content.subtitle}" class="hoverable">
+		<h3 id="title">{{ content.title }}</h3>
+		<h4 id="subtitle" *ngIf="!!content.subtitle">{{ content.subtitle }}</h4>
+	</div>
+	<picture>
+		<source srcset="/assets/{{ content.fileName }}.webp" type="image/webp">
+		<source srcset="/assets/{{ content.fileName }}.jpg" type="image/jpeg">
+		<img id="menu-image" src="/assets/{{ content.fileName }}.jpg" alt="Menu Item">
+	</picture>
+</button>
