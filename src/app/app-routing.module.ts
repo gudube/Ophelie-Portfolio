@@ -6,6 +6,7 @@ import { PageChoreoComponent } from './pages/page-choreo/page-choreo.component';
 import { PageContactComponent } from './pages/page-contact/page-contact.component';
 import { PageErreurComponent } from './pages/page-erreur/page-erreur.component';
 import { PagePeinturesComponent } from './pages/page-peintures/page-peintures.component';
+import { PagePublicationsComponent } from './pages/page-publications/page-publications.component';
 
 // for SEO rank on Google / metadata when using the link on other sites
 interface SeoData {
@@ -85,7 +86,7 @@ const routes: TypedRoutes = [
 	},
 	{
 		path: 'publications',
-		component: PageContactComponent,
+		component: PagePublicationsComponent,
 		data: new BasicData('publications'),
 	},
 	{

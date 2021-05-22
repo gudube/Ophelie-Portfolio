@@ -10,7 +10,17 @@
 	width: 100%;
 	text-align: center;
 	font-size: 7vw;	
-	margin: 70px 0;
+	margin: 70px 0 0px 0;
+}
+#arrow-container {
+	width: 100%;
+	svg {
+		display: block;
+		margin: 20px auto;
+		width: 80px;
+		fill:white;
+		font-size: 14em;
+	}
 }
 
 app-spotlight-item:not(:last-child) {

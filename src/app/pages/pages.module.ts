@@ -6,6 +6,7 @@ import { PageChoreoComponent } from './page-choreo/page-choreo.component';
 import { PageErreurComponent } from './page-erreur/page-erreur.component';
 import { PagePeinturesComponent } from './page-peintures/page-peintures.component';
 import { PageContactComponent } from './page-contact/page-contact.component';
+import { PagePublicationsComponent } from './page-publications/page-publications.component';
 
 @NgModule({
 	declarations: [
@@ -13,16 +14,19 @@ import { PageContactComponent } from './page-contact/page-contact.component';
 		PagePeinturesComponent,
 		PageErreurComponent,
 		PageAcceuilComponent,
-  PageContactComponent,
+		PageContactComponent,
+		PagePublicationsComponent,
 	],
 	imports: [
 		CommonModule,
-		UiToolsModule
-	], exports: [
+		UiToolsModule,
+	],
+	exports: [
 		PageChoreoComponent,
 		PagePeinturesComponent,
 		PageErreurComponent,
 		PageAcceuilComponent,
-	]
+		PagePublicationsComponent,
+	],
 })
 export class PagesModule { }
