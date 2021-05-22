@@ -2,22 +2,50 @@ header{
     width: 100%;
 }
 
-ol {
+.onglets {
     list-style-type: none;
     padding: 0;
     width: fit-content;
     margin: 20px auto;
     li {
         display: inline-block;
+		position: relative;
         a {
             padding: 10px 20px;
             text-decoration: none;
             font-weight: 300;
             // transition: color 0.2s;
         }
-        &.active a {
+        &.active > a {
             color: var(--accent-color);
         }
+
+		&:hover {
+			.sous-onglets {
+				opacity: 100%;
+			}
+		}
+
+		.sous-onglets {
+			transition: opacity 0.2s;
+			opacity: 0;
+			position: absolute;
+			top: 30px;
+			left: 50%;
+			width: max-content;
+			margin: 0 auto;
+			padding-left: 0;
+			transform: translateX(-50%);
+
+			li {
+				text-align: center;
+				a{
+					font-size: smaller;
+				}
+				display: block;
+				padding: 10px 20px;
+			}
+		}
         // &:hover:not(.active) a{
         //     color: var(--hovered-color);
         // }

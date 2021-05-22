@@ -1,3 +1,18 @@
+.corde-container {
+	height: 70vh;
+	width: fit-content;
+	margin: 0 auto;
+	img {
+		height: 100%;
+	}
+}
+#title {
+	width: 100%;
+	text-align: center;
+	font-size: 7vw;	
+	margin: 70px 0;
+}
+
 app-spotlight-item:not(:last-child) {
 	display: block;
 	margin-bottom: 10px;

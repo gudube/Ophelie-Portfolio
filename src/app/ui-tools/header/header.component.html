@@ -1,21 +1,49 @@
 <header>
     <div>
         <nav>
-            <ol>
-                <li routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}">
+            <ol class="onglets">
+                <!-- <li routerLinkActive="active"  [routerLinkActiveOptions]= "{exact: true}">
                     <a routerLink='' class="hoverable">ACCUEIL</a>
+                </li> -->
+				<li routerLinkActive="active">
+                    <a routerLink='/a-propos' class="hoverable">À PROPOS</a>
+					<!-- <ol class="sous-onglets">
+						<li routerLinkActive="active">
+							<a routerLink='/biographie' class="hoverable">BIOGRAPHIE</a>
+						</li>
+						<li routerLinkActive="active">
+							<a routerLink='/demarche' class="hoverable">DÉMARCHE ARTISTIQUE</a>
+						</li>
+						<li routerLinkActive="active">
+							<a routerLink='/experiences' class="hoverable">EXPÉRIENCES</a>
+						</li>
+					</ol> -->
                 </li>
                 <li routerLinkActive="active">
-                    <a routerLink='/choregraphies' class="hoverable">CRÉATIONS CHORÉGRAPHIQUES</a>
+                    <a routerLink='/danses' class="hoverable">DANSES & PERFORMANCES</a>
                 </li>
                 <li routerLinkActive="active">
-                    <a routerLink='/gallerie' class="hoverable">GALERIE DE PEINTURES ET DESSINS</a>
+                    <a routerLink='/arts-visuels' class="hoverable">ARTS VISUELS</a>
+					<!-- <ol class="sous-onglets">
+						<li routerLinkActive="active">
+							<a routerLink='/peintures' class="hoverable">PEINTURES</a>
+						</li>
+						<li routerLinkActive="active">
+							<a routerLink='/dessins' class="hoverable">DESSINS</a>
+						</li>
+						<li routerLinkActive="active">
+							<a routerLink='/sculptures' class="hoverable">SCULPTURES</a>
+						</li>
+					</ol> -->
                 </li>
-                <li routerLinkActive="active">
+                <!-- <li routerLinkActive="active">
                     <a>RECEUIL DE POÉSIE</a>
+                </li> -->
+				<li routerLinkActive="active">
+                    <a routerLink='/publications' class="hoverable">PUBLICATIONS</a>
                 </li>
                 <li routerLinkActive="active">
-                    <a>CONTACT</a>
+                    <a routerLink='/contact' class="hoverable">CONTACT</a>
                 </li>
             </ol>
         </nav>

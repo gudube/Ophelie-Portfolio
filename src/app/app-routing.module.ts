@@ -3,6 +3,7 @@ import { RouterModule, Route } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { PageAcceuilComponent } from './pages/page-acceuil/page-acceuil.component';
 import { PageChoreoComponent } from './pages/page-choreo/page-choreo.component';
+import { PageContactComponent } from './pages/page-contact/page-contact.component';
 import { PageErreurComponent } from './pages/page-erreur/page-erreur.component';
 import { PagePeinturesComponent } from './pages/page-peintures/page-peintures.component';
 
@@ -53,14 +54,44 @@ const routes: TypedRoutes = [
 		data: new BasicData(''),
 	},
 	{
-		path: 'choregraphies',
+		path: 'a-propos',
+		component: PageErreurComponent,
+		data: new BasicData('a-propos'),
+	},
+	// {
+	// 	path: 'biographie',
+	// 	component: PageErreurComponent,
+	// 	data: new BasicData('biographie'),
+	// },
+	// {
+	// 	path: 'demarche',
+	// 	component: PageErreurComponent,
+	// 	data: new BasicData('demarche'),
+	// },
+	// {
+	// 	path: 'experiences',
+	// 	component: PageErreurComponent,
+	// 	data: new BasicData('experiences'),
+	// },
+	{
+		path: 'danses',
 		component: PageChoreoComponent,
-		data: new BasicData('choregraphies'),
+		data: new BasicData('danses'),
 	},
 	{
-		path: 'gallerie',
+		path: 'arts-visuels',
 		component: PagePeinturesComponent,
-		data: new BasicData('gallerie'),
+		data: new BasicData('arts-visuels'),
+	},
+	{
+		path: 'publications',
+		component: PageContactComponent,
+		data: new BasicData('publications'),
+	},
+	{
+		path: 'contact',
+		component: PageContactComponent,
+		data: new BasicData('contact'),
 	},
 	{
 		path: '**',
