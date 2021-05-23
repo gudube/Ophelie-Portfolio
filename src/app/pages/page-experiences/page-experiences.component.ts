@@ -3,7 +3,6 @@ import {
 } from '@angular/core';
 import { MatSlider } from '@angular/material/slider';
 
-/* tslint:disable */
 @Component({
 	selector: 'app-page-experiences',
 	templateUrl: './page-experiences.component.html',
@@ -14,6 +13,8 @@ export class PageExperiencesComponent {
 
 	@ViewChild('dateSlider') slider!: MatSlider;
 
+	@ViewChild('2020') container2020!: ElementRef;
+
 	@ViewChild('2019') container2019!: ElementRef;
 
 	@ViewChild('2018') container2018!: ElementRef;
@@ -21,6 +22,18 @@ export class PageExperiencesComponent {
 	@ViewChild('2017') container2017!: ElementRef;
 
 	@ViewChild('2016') container2016!: ElementRef;
+
+	@ViewChild('2015') container2015!: ElementRef;
+
+	@ViewChild('2014') container2014!: ElementRef;
+
+	@ViewChild('2013') container2013!: ElementRef;
+
+	@ViewChild('2012') container2012!: ElementRef;
+
+	@ViewChild('2006') container2006!: ElementRef;
+
+	@ViewChild('2003') container2003!: ElementRef;
 
 	public sliderValue = 1;
 
@@ -44,16 +57,29 @@ export class PageExperiencesComponent {
 		}
 
 		const fullHeight = this.container?.nativeElement.scrollHeight - window.innerHeight;
-		let percentage = positionPx / fullHeight;
+		const percentage = Math.min(positionPx / fullHeight, 1);
 		this.sliderValue = 1 - percentage;
-		if (percentage > 1) {
-			percentage = 1;
-		}
 		// eslint-disable-next-line no-underscore-dangle
 		this.labelPos = percentage * (this.slider._elementRef.nativeElement.scrollHeight - 17);
 		this.disabled = false;
 
-		if (window.pageYOffset < this.container2019.nativeElement.offsetTop - window.innerHeight / 1.5) { this.labelYear = '20'; } else if (window.pageYOffset < this.container2018.nativeElement.offsetTop - window.innerHeight / 1.5) { this.labelYear = '19'; } else if (window.pageYOffset < this.container2017.nativeElement.offsetTop - window.innerHeight / 1.5) { this.labelYear = '18'; } else if (window.pageYOffset < this.container2016.nativeElement.offsetTop - window.innerHeight / 1.5) { this.labelYear = '17'; } else { this.labelYear = '16'; }
+		if (percentage === 1) {
+			this.labelYear = '03';
+			return;
+		}
+
+		const offset = window.pageYOffset + window.innerHeight / 2;
+		if (offset < this.container2019.nativeElement.offsetTop) { this.labelYear = '20'; } else
+		if (offset < this.container2018.nativeElement.offsetTop) { this.labelYear = '19'; } else
+		if (offset < this.container2017.nativeElement.offsetTop) { this.labelYear = '18'; } else
+		if (offset < this.container2016.nativeElement.offsetTop) { this.labelYear = '17'; } else
+		if (offset < this.container2015.nativeElement.offsetTop) { this.labelYear = '16'; } else
+		if (offset < this.container2014.nativeElement.offsetTop) { this.labelYear = '15'; } else
+		if (offset < this.container2013.nativeElement.offsetTop) { this.labelYear = '14'; } else
+		if (offset < this.container2012.nativeElement.offsetTop) { this.labelYear = '13'; } else
+		if (offset < this.container2006.nativeElement.offsetTop) { this.labelYear = '12'; } else
+		if (offset < this.container2003.nativeElement.offsetTop) { this.labelYear = '06'; } else
+		{ this.labelYear = '03'; }
 	}
 
 	public updateScrollPos(value: number): void {
