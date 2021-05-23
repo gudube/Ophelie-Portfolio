@@ -1,0 +1,89 @@
+<div #container id="aboutDateContainer">
+	<div #sliderContainer id="sliderContainer">
+		<mat-slider #dateSlider id="dateSlider" [vertical]="true" [invert]="false"
+		[min]=0 [max]=1 [step]=0.001 [disabled]="disabled"
+		[value]="sliderValue" (input)="updateScrollPos($event.value || 0)"></mat-slider>
+		<div id="labelContainer" [style.top.px]="labelPos" [ngClass]="{'disabled': disabled}">
+			<h4 #sliderLabel id="sliderLabelLeft" class="sliderLabel">20</h4>
+			<h4 id="sliderLabelRight" class="sliderLabel">{{labelYear}}</h4>
+		</div>
+	</div>
+	<div id="textContainer">
+		<div #2020>
+			<h3 class="year">2020</h3>
+			<div class="title" style="background-image: url('assets/experiences/yt-2020.JPG');">
+				<div class="job-container">
+					<div class="job"><h4>Danseuse et chorégraphe : Création de la chaine youtube « OPHELIE »</h4>
+						<span>Publications de courtes vidéos chorégraphiques et performances expérimentales</span>
+					</div>
+				</div>
+			</div>
+		<div #2019>
+			<h3 class="year">2019</h3>
+			<div class="title" style="background-image: url('assets/experiences/c1.jpg');">
+				<div class="job-container">
+					<div class="job"><h4>Chorégraphe : « Créatures sensibles »</h4>
+						<span>Duo présenté dans le cadre de l'évènement Dans l’buisson</span>
+					</div>
+				</div>
+			</div>
+			<div class="title" style="background-image: url('assets/experiences/c2.jpg');">
+				<div class="job-container">
+					<div class="job"><h4>Danseuse : « Ne pas arrêter sans l’accord de votre médecin »</h4>
+						<span>Présenté dans le cadre du festival Passerelle 840, chorégraphié par Laurence Gratton</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div #2018>
+			<h3 class="year">2018</h3>
+			<div class="title" style="background-image: url('assets/experiences/c3.jpg');">
+				<div class="job-container">
+					<div class="job"><h4>Danseuse : « Comme tout le monde »</h4>
+						<span>Présenté dans le cadre du programme de danse de l’UQÀM, chorégraphié par Ariane Demers</span>
+					</div>
+				</div>
+			</div>
+			<div class="title" style="background-image: url('assets/experiences/c4.jpg');">
+				<div class="job-container">
+					<div class="job"><h4>Chorégraphe et danseuse : « Les murs fondent entre mes doigts lorsque je ferme les yeux »</h4>
+						<span>Présenté avec 6 danseurs dans le cadre du festival Passerelle 840</span>
+					</div>
+				</div>
+			</div>
+		<div #2017>
+			<h3 class="year">2017</h3>
+			<div class="title" style="background-image: url('assets/experiences/c5.jpg');">
+				<div class="job-container">
+					<div class="job"><h4>Danseuse : « Quelque chose de sauvage »</h4>
+						<span>Présenté dans le cadre du programme de danse de l’UQÀM, chorégraphié par Mélanie Demers</span>
+					</div>
+				</div>
+			</div>
+			<div class="title" style="background-image: url('assets/experiences/c6.jpg');">
+				<div class="job-container">
+					<div class="job"><h4>Chorégraphe : « Ce qui n’existe pas »</h4>
+						<span>Présenté avec 5 danseuses dans le cadre du festival Passerelle 840</span>
+					</div>
+				</div>
+			</div>
+			<div class="title" style="background-image: url('assets/experiences/c7.jpg');">
+				<div class="job-container">
+					<div class="job"><h4>Danseuse : « Danses de société »</h4>
+						<span>Présenté dans le cadre du programme de danse de l’UQÀM, chorégraphié par Danièle Desnoyers</span>
+					</div>
+				</div>
+			</div>
+			<div class="title" style="background-image: url('assets/experiences/c8.jpg');">
+				<div class="job-container">
+					<div class="job"><h4>Danseuse : Danses pour la troupe Corner YUL</h4>
+						<span>Présentées aux compétitions Thunderstruck et 5678 Showtime</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div #2016>
+			<h3 class="year">2016 and before</h3>
+		</div>
+	</div>
+</div>

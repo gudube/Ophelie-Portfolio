@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 import { environment } from 'src/environments/environment';
+import { PageAboutComponent } from './pages/page-about/page-about.component';
 import { PageAcceuilComponent } from './pages/page-acceuil/page-acceuil.component';
 import { PageChoreoComponent } from './pages/page-choreo/page-choreo.component';
 import { PageContactComponent } from './pages/page-contact/page-contact.component';
 import { PageErreurComponent } from './pages/page-erreur/page-erreur.component';
+import { PageExperiencesComponent } from './pages/page-experiences/page-experiences.component';
 import { PagePeinturesComponent } from './pages/page-peintures/page-peintures.component';
 import { PagePublicationsComponent } from './pages/page-publications/page-publications.component';
 
@@ -56,24 +58,24 @@ const routes: TypedRoutes = [
 	},
 	{
 		path: 'a-propos',
-		component: PageErreurComponent,
+		component: PageAboutComponent,
 		data: new BasicData('a-propos'),
 	},
-	// {
-	// 	path: 'biographie',
-	// 	component: PageErreurComponent,
-	// 	data: new BasicData('biographie'),
-	// },
-	// {
-	// 	path: 'demarche',
-	// 	component: PageErreurComponent,
-	// 	data: new BasicData('demarche'),
-	// },
-	// {
-	// 	path: 'experiences',
-	// 	component: PageErreurComponent,
-	// 	data: new BasicData('experiences'),
-	// },
+	{
+		path: 'biographie',
+		component: PageErreurComponent,
+		data: new BasicData('biographie'),
+	},
+	{
+		path: 'demarche',
+		component: PageErreurComponent,
+		data: new BasicData('demarche'),
+	},
+	{
+		path: 'experiences',
+		component: PageExperiencesComponent,
+		data: new BasicData('experiences'),
+	},
 	{
 		path: 'danses',
 		component: PageChoreoComponent,

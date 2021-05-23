@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { SeoService } from './seo-service.service';
 import { UiToolsModule } from './ui-tools/ui-tools.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
 	declarations: [
@@ -16,6 +17,7 @@ import { UiToolsModule } from './ui-tools/ui-tools.module';
 		AppRoutingModule,
 		PagesModule,
 		UiToolsModule,
+		BrowserAnimationsModule,
 	],
 	providers: [SeoService],
 	bootstrap: [AppComponent],

@@ -7,15 +7,17 @@ import { PhotoGridComponent } from './photo-grid/photo-grid.component';
 import { PageBackgroundComponent } from './page-background/page-background.component';
 import { SpotlightListComponent } from './spotlight-list/spotlight-list.component';
 import { SpotlightItemComponent } from './spotlight-item/spotlight-item.component';
+import { TitleHeaderComponent } from './title-header/title-header.component';
 
 @NgModule({
 	declarations: [
 		HeaderComponent,
 		FootnotesComponent,
 		PhotoGridComponent,
-  		PageBackgroundComponent,
+		PageBackgroundComponent,
 		SpotlightListComponent,
 		SpotlightItemComponent,
+		TitleHeaderComponent,
 	],
 	imports: [
 		CommonModule,
@@ -28,6 +30,7 @@ import { SpotlightItemComponent } from './spotlight-item/spotlight-item.componen
 		PageBackgroundComponent,
 		SpotlightListComponent,
 		SpotlightItemComponent,
+		TitleHeaderComponent,
 	],
 })
 export class UiToolsModule { }
