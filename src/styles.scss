@@ -61,6 +61,7 @@ h1, h2, h3, h4, a, p, span, div {
 
 .hoverable {
 	// cursor: pointer;
+	cursor: pointer;
 	color: var(--hoverable-color);
 	a, p, h2, h3, h4, span {
 		color: inherit;

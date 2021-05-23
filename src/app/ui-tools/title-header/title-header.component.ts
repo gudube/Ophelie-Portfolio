@@ -16,4 +16,8 @@ export class TitleHeaderComponent implements OnInit {
 
 	ngOnInit(): void {
 	}
+
+	public scrollToBottom(): void {
+		window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+	}
 }

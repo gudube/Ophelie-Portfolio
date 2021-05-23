@@ -1,25 +1,29 @@
+#title-container {
+	height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .corde-container {
-	height: 70vh;
-	width: fit-content;
-	margin: 0 auto;
-	img {
-		height: 100%;
-	}
+	flex: 1 1 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 #title {
-	width: 100%;
 	text-align: center;
 	font-size: 7vw;	
 	margin: 70px 0 0px 0;
 }
 
 #arrow-container {
-	width: 100%;
+	width: fit-content;
+	margin: 0 auto;
+	padding: 20px;
+
 	svg {
 		display: block;
-		margin: 20px auto;
 		width: 80px;
-		fill:white;
-		font-size: 14em;
+		// fill:white;
 	}
 }
