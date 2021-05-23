@@ -2,7 +2,7 @@
 	<app-header></app-header>
 	<div class="corde-container" [style.background-image]="'url(assets/title-header/' + backgroundFile + ')'" [style.margin-bottom]="paddingBottomPic"></div>
 	<h1 id="title">{{title}}</h1>
-	<div id="arrow-container" class="hoverable" (click)="scrollToBottom()">
+	<div id="arrow-container" class="hoverable" (click)="scrollToBottom()"  [ngClass]="{'visible': showDownArrow}">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		viewBox="0 0 837.3 270" style="enable-background:new 0 0 837.3 270;" xml:space="preserve">
 			<g>
