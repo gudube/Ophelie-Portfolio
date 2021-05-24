@@ -1,0 +1,72 @@
+#presentation-container {
+	position: relative;
+	height: 600px;
+	width: 900px;
+	margin: 70px auto;
+
+	.presentation {
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		height: 500px;
+		width: 500px;
+		transition: transform 0.3s;
+		cursor: pointer;
+		background-color: black;
+		&:hover {
+			img {
+				opacity: 0.5;
+			}
+			.presentation-title {
+				opacity: 1;
+			}
+		}
+		img {
+			transition: opacity 0.2s;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.presentation-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 4em;
+			z-index: 10;
+			opacity: 0;
+			transition: opacity 0.2s;
+			margin: 0;
+		}
+	}
+	#presentation1 {
+		z-index: 5;
+		transform: translate(-50%, -50%) rotate(-6deg);
+	}
+	#presentation2 {
+		z-index: 4;
+		transform: translate(-30%, -50%) rotate(-2deg);
+		.presentation-title {
+			transform: translate(-40%, -50%);
+		}
+	}
+	#presentation3 {
+		z-index: 3;
+		transform: translate(-70%, -50%) rotate(5deg);
+		.presentation-title {
+			transform: translate(-85%, -50%);
+		}
+	}
+	&:hover {
+		width: 1400px;
+		#presentation1 {
+			transform: translate(-50%, -50%) rotate(2deg);
+		}
+		#presentation2 {
+			transform: translate(20%, -50%) rotate(6deg);
+		}
+		#presentation3 {
+			transform: translate(-120%, -50%) rotate(-4deg);
+		}
+	}
+}

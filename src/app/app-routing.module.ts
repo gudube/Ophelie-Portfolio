@@ -26,7 +26,6 @@ interface TypedRoute extends Route {
 
 type TypedRoutes = TypedRoute[];
 
-// TODO: mettre a jour le SEO
 const defaultTitle = 'OPHELIE | Portfolio';
 const defaultDescription = '';
 const defaultImage = '';
