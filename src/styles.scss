@@ -59,6 +59,17 @@ h1, h2, h3, h4, a, p, span, div {
     font-weight: 300;
 }
 
+@font-face {
+	font-family: 'Halfomania';
+	src: url('/assets/fonts/Halfomania-Regular.otf'),
+		url('/assets/fonts/Halfomania-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Automatic';
+	src: url('/assets/fonts/Automatic.otf');
+}
+
 .hoverable {
 	// cursor: pointer;
 	cursor: pointer;
