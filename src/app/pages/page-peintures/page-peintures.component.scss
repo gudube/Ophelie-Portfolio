@@ -13,7 +13,6 @@
 		transition: transform 0.3s, height 0.2s, width 0.2s;
 		cursor: pointer;
 		background-color: black;
-		user-select: none;
 		&.selected {
 			height: 550px;
 			width: 550px;

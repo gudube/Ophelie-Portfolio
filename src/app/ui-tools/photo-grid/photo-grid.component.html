@@ -1,13 +1,13 @@
-<!-- <full-image-viewer
-	[(visible)]=showingFullImage
+<app-full-image-viewer
+	[(visible)]=ShowingFullImage
 	[hasPreviousImage]=hasPreviousImage
 	[hasNextImage]=hasNextImage
 	(nextImage)="nextImage($event)">
-</full-image-viewer> -->
+</app-full-image-viewer>
 
-<div id="grid-view"> <!--[ngClass]="{'background-grid': showingFullImage}">-->
+<div id="grid-view" [ngClass]="{'background-grid': ShowingFullImage}">
 	<div class="grid-cell" *ngFor="let picture of pictures; let index = index">
-		<div class="square-img-container"> <!--(click)="selectImage(index)">-->
+		<div class="square-img-container" (click)="selectImage(index)">
 			<div class="shadow">
 				<p class="title">{{picture.title}}</p>
 			</div>
