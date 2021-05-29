@@ -10,10 +10,19 @@
 		position: absolute;
 		height: 500px;
 		width: 500px;
-		transition: transform 0.3s;
+		transition: transform 0.3s, height 0.2s, width 0.2s;
 		cursor: pointer;
 		background-color: black;
-		&:hover {
+		user-select: none;
+		&.selected {
+			height: 550px;
+			width: 550px;
+			.presentation-title {
+				font-size: 4.4em;
+			}
+		}
+
+		&:hover, &.selected {
 			img {
 				opacity: 0.5;
 			}
@@ -35,7 +44,7 @@
 			font-size: 4em;
 			z-index: 10;
 			opacity: 0;
-			transition: opacity 0.2s;
+			transition: opacity 0.2s, font-size 0.2s;
 			margin: 0;
 		}
 	}
@@ -49,12 +58,18 @@
 		.presentation-title {
 			transform: translate(-40%, -50%);
 		}
+		&.selected {
+			z-index: 6;
+		}
 	}
 	#presentation3 {
 		z-index: 3;
 		transform: translate(-70%, -50%) rotate(5deg);
 		.presentation-title {
 			transform: translate(-85%, -50%);
+		}
+		&.selected {
+			z-index: 6;
 		}
 	}
 	&:hover {

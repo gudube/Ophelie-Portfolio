@@ -1,16 +1,19 @@
 <app-title-header backgroundFile="oeil.jpeg" title="ARTS VISUELS" paddingBottomPic="10vh"></app-title-header>
 <div id="presentation-container">
-	<div class="presentation" id="presentation1">
+	<div class="presentation" id="presentation1"
+		[ngClass]="{'selected': currentFilter === filters.Peintures}" (click)="changeFilter(filters.Peintures)">
 		<h3 class="presentation-title">PEINTURES</h3>
 		<img src="assets/peintures/p8.jpg"/>
 	</div>
-	<div class="presentation" id="presentation2">
+	<div class="presentation" id="presentation2"
+		[ngClass]="{'selected': currentFilter === filters.Sculptures}" (click)="changeFilter(filters.Sculptures)">
 		<h3 class="presentation-title">SCULPTURES</h3>
 		<img src="assets/peintures/p2.jpg"/>
 	</div>
-	<div class="presentation" id="presentation3">
+	<div class="presentation" id="presentation3"
+		[ngClass]="{'selected': currentFilter === filters.Dessins}" (click)="changeFilter(filters.Dessins)">
 		<h3 class="presentation-title">DESSINS</h3>
 		<img src="assets/dessins/d3.jpg"/>
 	</div>
 </div>
-<app-photo-grid [pictures]="drawings"></app-photo-grid>
+<app-photo-grid [pictures]="shownDrawings"></app-photo-grid>
