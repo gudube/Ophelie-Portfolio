@@ -19,6 +19,9 @@ header{
 			filter: drop-shadow( 1px 1px 5px rgba(255, 255, 255, 0.4));
 		}
 	}
+	&.active {
+		visibility: hidden;
+	}
 }
 
 #onglets {
