@@ -1,6 +1,3 @@
 <app-title-header backgroundFile="pied.jpeg" title="DANSES & PERFORMANCES"></app-title-header>
-<app-spotlight-list>
-    <app-spotlight-item
-        *ngFor="let projet of projets" [content]=projet
-    ></app-spotlight-item>
+<app-spotlight-list [items]=projets>
 </app-spotlight-list>

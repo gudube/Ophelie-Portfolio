@@ -1,5 +1,14 @@
 .container {
-    margin: 0;
+    margin: 50px;
     background-color: var(--background-color);
-	height: auto;
+	height: 700px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
+
+// app-spotlight-item:not(:last-child) {
+// 	display: block;
+// 	margin-right: 10px;
+// }
+  

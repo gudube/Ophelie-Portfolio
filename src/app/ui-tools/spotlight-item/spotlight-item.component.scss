@@ -5,14 +5,20 @@
 	display: block;
 }
 
+#base-container {
+	width: 300px;
+}
+
 #image-container {
-    height: 29vh;
-    min-height: 100px;
-    width: 100%;
-    overflow: hidden;
+    height: 80%;
+	width: 100%;
+	overflow: hidden;
     text-align: center;
     position: relative;
 	cursor: pointer;
+	padding: 5px;
+	z-index: 1;
+	background-color: var(--background-color);
 
 	&:after {
 		//Adds a shadow over the image
@@ -87,6 +93,12 @@
 	}
 
 	@media(hover: hover){
+		transition: height 0.5s, width 0.5s, margin 0.5s;
+		animation: item-unhover 0.5s step-end;
+		@keyframes item-unhover {
+			from {z-index: 100;}
+			to {z-index: 1;}
+		}
 		#text-container{
 			text-shadow: 2px 2px 4px rgba(0,0,0);
 			opacity: var(--hoverable-opacity);
@@ -99,6 +111,11 @@
 
 		//when hovering
 		&:hover {
+			animation: none;
+			z-index: 101;
+			height: 100%;
+			width: 500px;
+			margin-left: -50%;
 			&:after {
 				opacity: 0; //Removes the shadow when hovering over item
 			}
