@@ -1,11 +1,41 @@
-.container {
-    margin: 50px;
+#global-container {
+    padding: 50px 0;
     background-color: var(--background-color);
 	height: 700px;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#items-container {
+	flex: 1 1 0;
+	padding: 0 50px;
+	height: 100%;
+	box-sizing: border-box;
+	overflow-x: scroll;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+	&::-webkit-scrollbar { /* WebKit */
+		width: 0;
+		height: 0;
+	}
 }
+
+.arrow-container {
+	width: 50px;
+	text-align: center;
+	justify-content: center;
+	svg {
+		height: 100%;
+		width: 30px;
+	}
+}
+
 
 // app-spotlight-item:not(:last-child) {
 // 	display: block;

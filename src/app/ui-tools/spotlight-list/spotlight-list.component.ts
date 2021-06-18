@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { SpotlightModel } from '../spotlight-item/spotlight-model';
 
 @Component({
@@ -9,8 +9,19 @@ import { SpotlightModel } from '../spotlight-item/spotlight-model';
 export class SpotlightListComponent implements OnInit {
 	@Input() public items: SpotlightModel[] = [];
 
+	@ViewChild('itemsContainer') container!: ElementRef;
+
 	constructor() { }
 
 	ngOnInit(): void {
+	}
+
+	public scroll(right: boolean): void {
+		const scrollContainer: HTMLElement = this.container.nativeElement;
+		if (right) {
+			scrollContainer.scrollBy({ left: scrollContainer.clientWidth, behavior: 'smooth' });
+		} else {
+			scrollContainer.scrollBy({ left: -scrollContainer.clientWidth, behavior: 'smooth' });
+		}
 	}
 }

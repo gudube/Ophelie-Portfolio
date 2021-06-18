@@ -10,7 +10,7 @@
 }
 
 #image-container {
-    height: 80%;
+    height: 85%;
 	width: 100%;
 	overflow: hidden;
     text-align: center;
@@ -114,8 +114,9 @@
 			animation: none;
 			z-index: 101;
 			height: 100%;
-			width: 500px;
-			margin-left: -50%;
+			width: 140%;
+			// transform: translateX(-20%);
+			margin-left: -20%;
 			&:after {
 				opacity: 0; //Removes the shadow when hovering over item
 			}
