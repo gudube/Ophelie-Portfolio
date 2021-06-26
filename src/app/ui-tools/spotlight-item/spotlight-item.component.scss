@@ -16,25 +16,25 @@
     text-align: center;
     position: relative;
 	cursor: pointer;
-	padding: 5px;
+	padding: 5px 10px;
 	z-index: 1;
 	background-color: var(--background-color);
 
-	&:after {
-		//Adds a shadow over the image
-		content: "";
-		position: absolute;
-		width: 100%; height: 100%;
-		left: 0; top: 0;
-		background-color: rgba(0,0,0,0.4);
-		-moz-box-shadow:    inset 15px 15px 50px 0 black;
-		-webkit-box-shadow: inset 15px 15px 50px 0 black;
-		box-shadow:         inset 10px 10px 50px 5px black;
+	// &:after {
+	// 	//Adds a shadow over the image
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 100%; height: 100%;
+	// 	left: 0; top: 0;
+	// 	background-color: rgba(0,0,0,0.4);
+	// 	-moz-box-shadow:    inset 15px 15px 50px 0 black;
+	// 	-webkit-box-shadow: inset 15px 15px 50px 0 black;
+	// 	box-shadow:         inset 10px 10px 50px 5px black;
 
-		opacity: 0.7;
-		-webkit-transition: opacity 0.1s ease;
-		transition: opacity 0.1s ease;
-	}
+	// 	opacity: 0.7;
+	// 	-webkit-transition: opacity 0.1s ease;
+	// 	transition: opacity 0.1s ease;
+	// }
 
 	#menu-image {
 		width: 100%;
@@ -50,6 +50,7 @@
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+		// width: 420px;
 		width: 100%;
 
 		color: var(--primary-text-color);
@@ -59,10 +60,11 @@
 		 }
 
 		#title {
-			font-size: max(1.5rem, 4vh);
+			font-size: max(1.5rem, 6vh);
 			padding: 10px 90px;
 			color: black;
-			font-weight: 600;
+			font-family: 'Blackout';
+			text-shadow: 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white;
 		}
 
 		#subtitle {
@@ -89,14 +91,17 @@
 			// opacity: var(--hoverable-opacity);
 			#title {
 				opacity: 0;
-				transition: opacity 0.1s linear 0.2s;
+				transition: opacity 0.4s;
 			}
 		}
 
-		//#menu-image {
-			//filter: blur(2px);
-			//-webkit-filter: blur(2px);
-		//}
+		#menu-image {
+			// filter: blur(2px);
+			// -webkit-filter: blur(2px);
+			-webkit-filter: grayscale(100%);
+    		filter: grayscale(100%);
+			transition: filter 0.5s;
+		}
 
 		//when hovering
 		&:hover {
@@ -116,6 +121,13 @@
 				#title {
 					opacity: 100%;
 				}
+			}
+
+			#menu-image {
+				// filter: blur(2px);
+				// -webkit-filter: blur(2px);
+				-webkit-filter: none;
+				filter: none;
 			}
 		}
 	}

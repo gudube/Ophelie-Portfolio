@@ -11,47 +11,18 @@ enum Filter { None = '', Peintures = 'peintures/', Dessins = 'dessins/', Sculptu
 })
 export class PagePeinturesComponent implements OnInit {
 	private drawings: PictureModel[] = [
-		{ fileName: 'dessins/d1.jpg', title: 'Avatar 1', description: 'description' },
-		{ fileName: 'dessins/d2.jpg', title: 'Avatar 2', description: 'description' },
-		{ fileName: 'dessins/d3.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d4.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d5.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d6.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d7.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d8.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d9.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d10.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d11.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d12.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d13.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d14.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d15.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d16.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d17.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d18.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d19.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d20.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d21.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d22.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d23.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d24.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d25.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d26.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d27.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d28.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'dessins/d29.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p1.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p2.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p3.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p4.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p5.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p6.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p7.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p8.jpg', title: 'Titre', description: 'description' },
-		{ fileName: 'peintures/p9.jpg', title: 'Titre', description: 'description' },
+		{ fileName: 'peintures/p1.jpg', title: 'PORTAIT D’UN CIEL, UN JOUR QUI N’EXISTE PAS ENCORE', subtitle: '2014, acrylique sur toile, 76 x 61cm', description: 'description' },
+		{ fileName: 'peintures/p2.jpg', title: 'AU-DELÀ DU RÉEL', subtitle: '2018, acrylique sur toile, 51 x 40cm', description: 'description' },
+		{ fileName: 'peintures/p3.jpg', title: 'DISPARITION', subtitle: '2018, acrylique sur toile, 51 x 40cm', description: 'description' },
+		{ fileName: 'peintures/p4.jpg', title: 'FRAGMENT D’ODYSSÉE', subtitle: '2020, acrylique sur toile, 51 x 40cm', description: 'description' },
+		{ fileName: 'peintures/p5.jpg', title: 'NE FERME PAS LES YEUX', subtitle: '2020, acrylique sur toile, 51 x 40cm', description: 'description' },
+		{ fileName: 'peintures/p6.jpg', title: 'LA TIRADE DU SCORPION', subtitle: '2021, acrylique sur toile, 61 x 45.5cm', description: 'description' },
+		{ fileName: 'peintures/p7.jpg', title: 'ESPÉRONS, AVANT QUE TOUT NE FONDE', subtitle: '2021, acrylique sur toile, 30.5 x 30.5cm', description: 'description' },
+		{ fileName: 'peintures/p8.jpg', title: 'ANNIE', subtitle: '2021, acrylique sur toile, 30.5 x 30.5cm', description: 'description' },
+		{ fileName: 'peintures/p9.jpg', title: 'JE VOUS LAISSE L’EXPLORER', subtitle: '2021, acrylique sur papier d’aquarelle, 212.5 x 122cm', description: 'description' },
 	];
 
-	public shownDrawings: PictureModel[] = this.drawings;
+	public shownDrawings: PictureModel[] = [];
 
 	public filters = Filter;
 
@@ -66,7 +37,7 @@ export class PagePeinturesComponent implements OnInit {
 	changeFilter(filter: Filter): void {
 		if (filter === this.currentFilter) {
 			this.currentFilter = Filter.None;
-			this.shownDrawings = this.drawings;
+			this.shownDrawings = [];
 		} else {
 			this.currentFilter = filter;
 			this.shownDrawings = this.drawings.filter((picture) => picture.fileName.startsWith(

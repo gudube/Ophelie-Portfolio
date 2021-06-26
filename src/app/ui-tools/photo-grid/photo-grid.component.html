@@ -9,9 +9,11 @@
 	<div class="grid-cell" *ngFor="let picture of pictures; let index = index">
 		<div class="square-img-container" (click)="selectImage(index)">
 			<div class="shadow">
-				<p class="title">{{picture.title}}</p>
+				<!-- <p class="title">{{picture.title}}</p> -->
 			</div>
 			<img src="/assets/{{picture.fileName}}" alt="{{picture.title}}" loading="lazy">
 		</div>
+		<p class="title">{{picture.title}}</p>
+		<p class="subtitle">{{picture.subtitle}}</p>
 	</div>
 </div>

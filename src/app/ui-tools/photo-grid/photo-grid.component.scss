@@ -3,7 +3,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	// padding-top: 50px;
-	max-width: 1200px;
+	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -12,15 +12,13 @@
 	}
 
 	.grid-cell {
-		height: 300px;
-		width: 300px;
 		margin: 20px;
 
 		.square-img-container {
 			background-color: black;
 			margin: 0 auto;
-			height: 300px;
-			width: 300px;
+			height: 400px;
+			width: 400px;
 
 			overflow: hidden;
 			cursor: pointer;
@@ -36,14 +34,6 @@
 				box-shadow: inset 0 0 40px 2px rgb(0 0 0 / 40%);
 				opacity: 0;
 
-				.title {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					font-size: 2.2rem;
-					margin: 0;
-				}
 			}
 
 			img {
@@ -52,6 +42,15 @@
 				object-fit: cover;
 				object-position: top center;
 			}
+		}
+
+		.title, .subtitle {
+			width: 100%;
+			text-align: center;
+		}
+
+		.subtitle {
+			color: grey;
 		}
 
 		@media (hover: hover) {

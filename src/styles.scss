@@ -70,6 +70,11 @@ h1, h2, h3, h4, a, p, span, div {
 	src: url('/assets/fonts/Automatic.otf');
 }
 
+@font-face {
+	font-family: 'Blackout';
+	src: url('/assets/fonts/Blackout-2am.ttf');
+}
+
 .hoverable {
 	// cursor: pointer;
 	cursor: pointer;
