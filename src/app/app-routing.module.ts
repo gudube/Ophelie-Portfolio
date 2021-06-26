@@ -3,8 +3,10 @@ import { RouterModule, Route } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { PageAboutComponent } from './pages/page-about/page-about.component';
 import { PageAcceuilComponent } from './pages/page-acceuil/page-acceuil.component';
+import { PageBiographieComponent } from './pages/page-biographie/page-biographie.component';
 import { PageChoreoComponent } from './pages/page-choreo/page-choreo.component';
 import { PageContactComponent } from './pages/page-contact/page-contact.component';
+import { PageDemarchesComponent } from './pages/page-demarches/page-demarches.component';
 import { PageErreurComponent } from './pages/page-erreur/page-erreur.component';
 import { PageExperiencesComponent } from './pages/page-experiences/page-experiences.component';
 import { PagePeinturesComponent } from './pages/page-peintures/page-peintures.component';
@@ -61,17 +63,17 @@ const routes: TypedRoutes = [
 		data: new BasicData('a-propos'),
 	},
 	{
-		path: 'biographie',
-		component: PageErreurComponent,
+		path: 'a-propos/biographie',
+		component: PageBiographieComponent,
 		data: new BasicData('biographie'),
 	},
 	{
-		path: 'demarche',
-		component: PageErreurComponent,
+		path: 'a-propos/demarches',
+		component: PageDemarchesComponent,
 		data: new BasicData('demarche'),
 	},
 	{
-		path: 'experiences',
+		path: 'a-propos/experiences',
 		component: PageExperiencesComponent,
 		data: new BasicData('experiences'),
 	},

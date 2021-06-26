@@ -1,0 +1,20 @@
+#photo-bio {
+	background-color: white;
+	height: 40vh;
+	width: 100%;
+}
+
+#name-title {
+	position: relative;	
+	h2 {
+		font-size: 14em;
+		margin: 0 auto;
+		position: absolute;
+		top:-50%;
+		transform: translate(0, -47%);
+		width: 100vw;
+		text-align: center;
+		font-family: "Halfomania";
+	}
+}
+

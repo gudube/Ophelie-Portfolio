@@ -14,6 +14,8 @@ export class TitleHeaderComponent implements OnInit {
 
 	@Input() public title = 'O P H E L I E';
 
+	@Input() public accentColor = true;
+
 	public showDownArrow = true;
 
 	constructor() { }

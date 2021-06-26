@@ -8,6 +8,7 @@
     position: relative;
 	display: flex;
 	align-items: center;
+	border-bottom: 1px solid white;
 
     .title-video {
 		position: absolute;
@@ -42,12 +43,14 @@
             text-shadow: 3px 3px 5px rgba(black, 0.2);
 			font-family: 'Halfomania';
 			line-height: 0.8em;
+			height: 120px;
         }
         h2 {
-            font-size: 2em;
+            font-size: 1.65em;
             margin: 0;
             text-shadow: 2px 2px 4px rgba(black, 0.2);
 			font-weight: 600;
+			color: var(--accent-color);
         }
 		#logo {
 			margin-left: auto;

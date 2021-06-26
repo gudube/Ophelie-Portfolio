@@ -11,6 +11,8 @@ import { PagePublicationsComponent } from './page-publications/page-publications
 import { PageAboutComponent } from './page-about/page-about.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { PageExperiencesComponent } from './page-experiences/page-experiences.component';
+import { PageDemarchesComponent } from './page-demarches/page-demarches.component';
+import { PageBiographieComponent } from './page-biographie/page-biographie.component';
 
 @NgModule({
 	declarations: [
@@ -22,6 +24,8 @@ import { PageExperiencesComponent } from './page-experiences/page-experiences.co
 		PagePublicationsComponent,
 		PageAboutComponent,
 		PageExperiencesComponent,
+  PageDemarchesComponent,
+  PageBiographieComponent,
 	],
 	imports: [
 		CommonModule,

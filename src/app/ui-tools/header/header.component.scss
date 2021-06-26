@@ -1,5 +1,6 @@
 header{
     width: 100%;
+	border-bottom: 1px solid white;
 }
 
 #logo-header {
@@ -7,7 +8,7 @@ header{
 	top: 0;
 	left: 0;
 	margin-left: 30px;
-	margin-top: 20px;
+	margin-top: 13px;
 	width: 50px;
 	height: 50px;
 	z-index: 100;
@@ -28,7 +29,7 @@ header{
     list-style-type: none;
     padding: 0;
     width: fit-content;
-    margin: 40px auto 20px auto;
+    margin: 30px auto 25px auto;
     li {
         display: inline-block;
 		position: relative;
