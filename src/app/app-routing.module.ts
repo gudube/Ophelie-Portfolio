@@ -28,7 +28,7 @@ interface TypedRoute extends Route {
 
 type TypedRoutes = TypedRoute[];
 
-const defaultTitle = 'OPHELIE | Portfolio';
+const defaultTitle = 'OPHELIE ART | Portfolio';
 const defaultDescription = '';
 const defaultImage = '';
 
@@ -55,52 +55,56 @@ const routes: TypedRoutes = [
 		path: '',
 		pathMatch: 'full',
 		component: PageAcceuilComponent,
-		data: new BasicData(''),
+		data: new BasicData('', defaultTitle, 'Découvrez le profil et les créations d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: 'a-propos',
+		pathMatch: 'full',
 		component: PageAboutComponent,
-		data: new BasicData('a-propos'),
+		data: new BasicData('a-propos', 'OPHELIE ART | Profil', 'Découvrez le profil d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: 'a-propos/biographie',
+		pathMatch: 'full',
 		component: PageBiographieComponent,
-		data: new BasicData('biographie'),
+		data: new BasicData('biographie', 'OPHELIE ART | Biographie', 'Découvrez la biographie d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: 'a-propos/demarches',
+		pathMatch: 'full',
 		component: PageDemarchesComponent,
-		data: new BasicData('demarche'),
+		data: new BasicData('demarche', 'OPHELIE ART | Démarche artistique', 'Découvrez la démarche artistique d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: 'a-propos/experiences',
+		pathMatch: 'full',
 		component: PageExperiencesComponent,
-		data: new BasicData('experiences'),
+		data: new BasicData('experiences', 'OPHELIE ART | Expériences', 'Découvrez les expériences en danse et en chorégraphie d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: 'danses',
 		component: PageChoreoComponent,
-		data: new BasicData('danses'),
+		data: new BasicData('danses', 'OPHELIE ART | Danses & performances', 'Découvrez les créations chorégraphiques d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: 'arts-visuels',
 		component: PagePeinturesComponent,
-		data: new BasicData('arts-visuels'),
+		data: new BasicData('arts-visuels', 'OPHELIE ART | Arts visuels', 'Découvrez les créations d\'art visuel d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: 'publications',
 		component: PagePublicationsComponent,
-		data: new BasicData('publications'),
+		data: new BasicData('publications', 'OPHELIE ART | Publications', 'Découvrez les publications d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: 'contact',
 		component: PageContactComponent,
-		data: new BasicData('contact'),
+		data: new BasicData('contact', 'OPHELIE ART | Contact', 'Contactez Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
 	},
 	{
 		path: '**',
 		component: PageErreurComponent,
-		data: new BasicData('erreur'),
+		data: new BasicData('erreur', 'OPHELIE ART', ''),
 	},
 ];
 
