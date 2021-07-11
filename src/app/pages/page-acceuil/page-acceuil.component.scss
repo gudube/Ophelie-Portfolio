@@ -44,12 +44,21 @@
 			font-family: 'Halfomania';
 			line-height: 0.8em;
 			height: 120px;
+			span {
+				font-family: 'Halfomania';
+				font-size: 4rem;
+				display: inline-block;
+				height: 100%;
+				line-height: 1em;
+				vertical-align: middle;
+			}
         }
         h2 {
             font-size: 1.65em;
             margin: 0;
             text-shadow: 2px 2px 4px rgba(black, 0.2);
 			color: var(--accent-color);
+			font-weight: bold;
         }
 		#logo {
 			margin-left: auto;
@@ -58,7 +67,7 @@
 			flex-grow: 1;
 			fill: white;
 			width: 430px;
-			filter: drop-shadow( 1px 1px 5px rgba(255, 255, 255, 0.5));
+			// filter: drop-shadow( 1px 1px 5px rgba(255, 255, 255, 0.5));
 		}
 		@media only screen and (max-width: 1000px) {
 			h1 {
