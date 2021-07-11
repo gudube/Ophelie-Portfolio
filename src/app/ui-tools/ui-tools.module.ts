@@ -9,6 +9,7 @@ import { SpotlightListComponent } from './spotlight-list/spotlight-list.componen
 import { SpotlightItemComponent } from './spotlight-item/spotlight-item.component';
 import { TitleHeaderComponent } from './title-header/title-header.component';
 import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.component';
+import { MenuCirclesComponent } from './menu-circles/menu-circles.component';
 
 @NgModule({
 	declarations: [
@@ -20,6 +21,7 @@ import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.
 		SpotlightItemComponent,
 		TitleHeaderComponent,
   		FullImageViewerComponent,
+    	MenuCirclesComponent,
 	],
 	imports: [
 		CommonModule,
@@ -33,6 +35,7 @@ import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.
 		SpotlightListComponent,
 		SpotlightItemComponent,
 		TitleHeaderComponent,
+		MenuCirclesComponent
 	],
 })
 export class UiToolsModule { }
