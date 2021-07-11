@@ -1,8 +1,17 @@
+#container {
+	background-image: url("/assets/background-arts-visuels.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position-x: center;
+}
+
 #presentation-container {
 	position: relative;
 	height: 600px;
 	width: 900px;
-	margin: 20px auto;
+	margin: 0 auto;
+	padding: 20px 0;
 
 	.presentation {
 		top: 50%;
