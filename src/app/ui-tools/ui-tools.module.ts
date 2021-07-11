@@ -10,6 +10,7 @@ import { SpotlightItemComponent } from './spotlight-item/spotlight-item.componen
 import { TitleHeaderComponent } from './title-header/title-header.component';
 import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.component';
 import { MenuCirclesComponent } from './menu-circles/menu-circles.component';
+import { SocialLogosComponent } from './social-logos/social-logos.component';
 
 @NgModule({
 	declarations: [
@@ -22,6 +23,7 @@ import { MenuCirclesComponent } from './menu-circles/menu-circles.component';
 		TitleHeaderComponent,
   		FullImageViewerComponent,
     	MenuCirclesComponent,
+     	SocialLogosComponent,
 	],
 	imports: [
 		CommonModule,
@@ -35,7 +37,8 @@ import { MenuCirclesComponent } from './menu-circles/menu-circles.component';
 		SpotlightListComponent,
 		SpotlightItemComponent,
 		TitleHeaderComponent,
-		MenuCirclesComponent
+		MenuCirclesComponent,
+		SocialLogosComponent
 	],
 })
 export class UiToolsModule { }

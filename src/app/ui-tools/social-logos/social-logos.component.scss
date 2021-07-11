@@ -1,0 +1,36 @@
+#icons-container {
+	height: 100%;
+	text-align: center;
+	.image-container {
+		&:not(:first-child){
+			margin-left: 20px;
+		}
+		img {
+			box-sizing: border-box;
+			height: 32px;
+		}
+		&:focus {
+			outline: 0;
+			img {
+				filter: drop-shadow(2px 2px 3px var(--readable-text-color));
+			}
+		}
+	}
+	&.small {
+		.image-container {
+			img {
+				height: 18px;
+			}
+		}
+	}
+}
+
+#contact-me, #icons-container {
+	flex-basis: 175px;
+}
+
+@media only screen and (max-width: 700px) {
+	#contact-me, #icons-container {
+		flex-basis: auto;
+	}
+}
