@@ -13,7 +13,8 @@
 	<div class="presentation noselect" id="presentation3"
 		[ngClass]="{'selected': currentFilter === filters.Dessins}" (click)="changeFilter(filters.Dessins)">
 		<h3 class="presentation-title">DESSINS</h3>
-		<img src="assets/dessins/d3.jpg"/>
+		<img src="assets/dessins/d5.jpg"/>
 	</div>
 </div>
+<h4 id="title-selected">{{currentTitle}}</h4>
 <app-photo-grid [pictures]="shownDrawings"></app-photo-grid>

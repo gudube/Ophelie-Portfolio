@@ -6,7 +6,7 @@
 }
 
 #base-container {
-	width: 300px;
+	width: 250px;
 }
 
 #image-container {
@@ -60,11 +60,12 @@
 		 }
 
 		#title {
-			font-size: max(1.5rem, 6vh);
+			font-size: 2.5rem; //max(0.6rem, 4vh);
 			padding: 10px 90px;
-			color: black;
-			font-family: 'Blackout';
-			text-shadow: 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white;
+			color: white;
+			font-family: 'Bahnschrift';
+			// text-shadow: 0 0 1px grey, 0 0 1px grey, 0 0 1px grey, 0 0 1px grey;
+			font-weight: 400;
 		}
 
 		#subtitle {
@@ -98,8 +99,8 @@
 		#menu-image {
 			// filter: blur(2px);
 			// -webkit-filter: blur(2px);
-			-webkit-filter: grayscale(100%);
-    		filter: grayscale(100%);
+			//-webkit-filter: grayscale(100%);
+    		filter: saturate(35%);
 			transition: filter 0.5s;
 		}
 
