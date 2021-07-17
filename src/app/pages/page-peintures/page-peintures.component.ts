@@ -43,6 +43,8 @@ export class PagePeinturesComponent implements OnInit {
 
 	public currentTitle = '';
 
+	public hoverTitle: string | null = null;
+
 	constructor() {
 	}
 
@@ -52,17 +54,21 @@ export class PagePeinturesComponent implements OnInit {
 		// });
 	}
 
-	// hoverImage(filter: Filter): void {
-	// 	if (filter === Filter.Peintures) {
-	// 		this.currentTitle = 'PEINTURES';
-	// 	} else if (filter === Filter.Sculptures) {
-	// 		this.currentTitle = 'SCULPTURES';
-	// 	} else if (filter === Filter.Dessins) {
-	// 		this.currentTitle = 'DESSINS';
-	// 	} else {
-	// 		this.currentTitle = '';
-	// 	}
-	// }
+	hoverImage(filter: Filter): void {
+		if (filter === Filter.Peintures) {
+			this.hoverTitle = 'PEINTURES';
+		} else if (filter === Filter.Sculptures) {
+			this.hoverTitle = 'SCULPTURES';
+		} else if (filter === Filter.Dessins) {
+			this.hoverTitle = 'DESSINS';
+		} else {
+			this.hoverTitle = null;
+		}
+	}
+
+	unhoverImage(): void {
+		this.hoverTitle = null;
+	}
 
 	changeFilter(filter: Filter): void {
 		if (filter === this.currentFilter) {
