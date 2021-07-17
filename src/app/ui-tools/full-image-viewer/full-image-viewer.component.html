@@ -25,7 +25,9 @@
 			</svg>
 	</div>
 	<div id="imgContainer" class="noselect">
-		<img src="/assets/{{image.fileName}}" *ngIf="this.showImage" alt="Full Size Image">
+		<div id="smallImgContainer">
+			<img src="/assets/{{image.fileName}}" *ngIf="this.showImage" alt="Full Size Image">
+		</div>
 	</div>
 	<div id="description-separator"></div>
 	<p id="description">{{image.description}}</p>
