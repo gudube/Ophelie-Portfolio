@@ -23,12 +23,9 @@
 }
 
 #imgContainer {
-	// flex-grow: 2;
-	// flex-shrink: 2;
 	height: 100%;
 	width: 70%;
 	flex-basis: 70%;
-	min-height: 0;
 	padding: 25px 50px;
 	box-sizing: border-box;
 	display: flex;
@@ -42,15 +39,29 @@
 	}
 
 	#smallImgContainer {
-		width: 100%;
 		display: flex;
 		justify-content: center;
-		height: fit-content;
 		max-height: 100%;
+		position: relative;
+
 		img {
-			height: fit-content;
 			max-width: 100%;
-			max-height: 100%;
+		}
+		mat-icon {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: rgba(0, 0, 0, 0.5);
+  			border-radius: 50%;
+			font-size: 30px;
+			height: 30px;
+			width: 30px;
+		}
+		#subprevious-icon {
+			left: 10px;
+		}
+		#subnext-icon {
+			right: 10px;
 		}
 	}
 }
@@ -67,17 +78,13 @@
 	text-align: left;
 	box-sizing: border-box;
 	flex-basis: 30%;
-	// flex-grow: 1;
-	// flex-shrink: 1;
 }
 
 #controls {
 	position: absolute;
 	top: 0;
 	right: 0;
-	// background-color: rgba(0,0,0,0.5);
 	padding: 15px 20px 10px 15px;
-	// border-radius: 0 0 0 10px;
 	font-size: 1.5em;
 }
 
@@ -88,7 +95,6 @@
 	top: 50%;
 	transform: translateY(-50%);
 	text-align: center;
-	// background-color: rgba(0,0,0,0.5);
 	cursor: pointer;
 	visibility: visible;
 	@media only screen and (max-width: 800px) {
@@ -96,11 +102,9 @@
 	}
 
 	&.leftArrow {
-		//border-radius: 0 5px 5px 0;
 		left: 0;
 	}
 	&.rightArrow {
-		//border-radius: 5px 0 0 5px;
 		right: 0;
 	}
 	

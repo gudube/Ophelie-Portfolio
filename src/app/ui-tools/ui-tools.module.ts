@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { FootnotesComponent } from './footnotes/footnotes.component';
@@ -21,13 +22,14 @@ import { SocialLogosComponent } from './social-logos/social-logos.component';
 		SpotlightListComponent,
 		SpotlightItemComponent,
 		TitleHeaderComponent,
-  		FullImageViewerComponent,
-    	MenuCirclesComponent,
-     	SocialLogosComponent,
+		FullImageViewerComponent,
+		MenuCirclesComponent,
+		SocialLogosComponent,
 	],
 	imports: [
 		CommonModule,
 		AppRoutingModule,
+		MatIconModule,
 	],
 	exports: [
 		HeaderComponent,
@@ -38,7 +40,7 @@ import { SocialLogosComponent } from './social-logos/social-logos.component';
 		SpotlightItemComponent,
 		TitleHeaderComponent,
 		MenuCirclesComponent,
-		SocialLogosComponent
+		SocialLogosComponent,
 	],
 })
 export class UiToolsModule { }
