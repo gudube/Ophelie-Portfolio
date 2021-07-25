@@ -3,4 +3,5 @@ export interface PictureModel {
 	title: string;
 	subtitle: string;
 	description: string;
+	subImages: string[];
 }

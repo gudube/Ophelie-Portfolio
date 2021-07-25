@@ -33,6 +33,8 @@ export class FullImageViewerComponent {
 
 	public image!: PictureModel;
 
+	public shownSubImageNum = 0;
+
 	constructor(private renderer: Renderer2) { }
 
 	public setImage(image: PictureModel): void {
