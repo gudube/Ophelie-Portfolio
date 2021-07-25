@@ -39,6 +39,7 @@ export class FullImageViewerComponent {
 
 	public setImage(image: PictureModel): void {
 		this.image = image;
+		this.shownSubImageNum = 0;
 		this.showImage = true;
 	}
 
@@ -56,11 +57,24 @@ export class FullImageViewerComponent {
 
 	@HostListener('window:resize')
 	public resetArrowsPositions(): void {
-		if (this.imgContainer && this.fullImg && this.nextSubArrow && this.previousSubArrow) {
+		if (this.imgContainer && this.fullImg && (this.previousSubArrow || this.nextSubArrow)) {
 			const offset = (this.imgContainer.nativeElement.clientWidth
 				- this.fullImg.nativeElement.clientWidth) / 2 + 10;
-			this.renderer.setStyle(this.previousSubArrow.nativeElement, 'left', offset);
-			this.renderer.setStyle(this.nextSubArrow.nativeElement, 'right', offset);
+			if (this.previousSubArrow) {
+				this.renderer.setStyle(this.previousSubArrow.nativeElement, 'left', offset);
+			}
+			if (this.nextSubArrow) {
+				this.renderer.setStyle(this.nextSubArrow.nativeElement, 'right', offset);
+			}
+		}
+	}
+
+	public changeSubImage(next: boolean) : void {
+		if (next && this.shownSubImageNum + 1 < this.image.subImages.length) {
+			this.shownSubImageNum += 1;
+		}
+		if (!next && this.shownSubImageNum - 1 >= 0) {
+			this.shownSubImageNum -= 1;
 		}
 	}
 }

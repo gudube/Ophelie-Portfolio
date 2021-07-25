@@ -29,9 +29,9 @@
 			<div id="subImageIndicators" *ngIf="image.subImages.length > 1">
 				<div class="subImageIndicator" *ngFor="let subImage of image.subImages; let i = index" [ngClass]="{'selected': shownSubImageNum == i}"></div>
 			</div>
-			<mat-icon #subpreviousIcon id="subprevious-icon" *ngIf="image.subImages.length > 1" aria-hidden="false" aria-label="Previous sub-image">navigate_before</mat-icon>
-			<img #fullImg src="/assets/{{image.fileName}}" *ngIf="this.showImage" alt="Full Size Image" (load)="resetArrowsPositions()">
-			<mat-icon #subnextIcon id="subnext-icon" *ngIf="image.subImages.length > 1" aria-hidden="false" aria-label="Next sub-image">navigate_next</mat-icon>
+			<mat-icon #subpreviousIcon id="subprevious-icon" *ngIf="shownSubImageNum > 0" aria-hidden="false" aria-label="Previous sub-image" (click)="changeSubImage(false)">navigate_before</mat-icon>
+			<img #fullImg src="/assets/{{image.subImages[shownSubImageNum]}}" *ngIf="this.showImage" alt="Full Size Image" (load)="resetArrowsPositions()">
+			<mat-icon #subnextIcon id="subnext-icon" *ngIf="shownSubImageNum + 1 < image.subImages.length" aria-hidden="false" aria-label="Next sub-image" (click)="changeSubImage(true)">navigate_next</mat-icon>
 		</div>
 	</div>
 	<div id="description-separator"></div>

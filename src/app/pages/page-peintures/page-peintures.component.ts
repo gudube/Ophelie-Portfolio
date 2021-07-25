@@ -15,7 +15,7 @@ export class PagePeinturesComponent implements OnInit {
 	public photoGrid!: ElementRef;
 
 	private drawings: PictureModel[] = [
-		{ fileName: 'peintures/p1.jpg', title: 'PORTAIT D’UN CIEL, UN JOUR QUI N’EXISTE PAS ENCORE', subtitle: '2014, acrylique sur toile, 76 x 61cm', description: 'description', subImages: ['peintures/p1.jpg', 'peintures/p1.jpg', 'peintures/p1.jpg'] },
+		{ fileName: 'peintures/p1.jpg', title: 'PORTAIT D’UN CIEL, UN JOUR QUI N’EXISTE PAS ENCORE', subtitle: '2014, acrylique sur toile, 76 x 61cm', description: 'description', subImages: ['peintures/p1.jpg', 'peintures/p8.jpg', 'peintures/p9.jpg'] },
 		{ fileName: 'peintures/p2.jpg', title: 'AU-DELÀ DU RÉEL', subtitle: '2018, acrylique sur toile, 51 x 40cm', description: 'description', subImages: ['peintures/p2.jpg'] },
 		{ fileName: 'peintures/p3.jpg', title: 'DISPARITION', subtitle: '2018, acrylique sur toile, 51 x 40cm', description: 'description', subImages: ['peintures/p3.jpg'] },
 		{ fileName: 'peintures/p4.jpg', title: 'FRAGMENT D’ODYSSÉE', subtitle: '2020, acrylique sur toile, 51 x 40cm', description: 'description', subImages: ['peintures/p4.jpg'] },
