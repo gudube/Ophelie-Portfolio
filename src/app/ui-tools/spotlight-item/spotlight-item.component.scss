@@ -54,6 +54,8 @@
 		width: 100%;
 
 		color: var(--primary-text-color);
+		display: flex;
+		justify-content: center;
 
 		&.with-subtitle{
 		 	top: 45%;
@@ -61,7 +63,7 @@
 
 		#title {
 			font-size: 2.5rem; //max(0.6rem, 4vh);
-			padding: 10px 90px;
+			padding: 10px 40px;
 			color: white;
 			font-family: 'Bahnschrift';
 			// text-shadow: 0 0 1px grey, 0 0 1px grey, 0 0 1px grey, 0 0 1px grey;
