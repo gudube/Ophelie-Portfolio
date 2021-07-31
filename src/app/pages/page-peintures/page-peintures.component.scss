@@ -21,6 +21,7 @@
 		transition: transform 0.3s, height 0.2s, width 0.2s, z-index 0.1s step-end;
 		cursor: pointer;
 		background-color: black;
+		border: 2px solid white;
 		&.selected {
 			height: 450px;
 			width: 450px;
