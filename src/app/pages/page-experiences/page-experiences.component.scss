@@ -124,11 +124,6 @@
 			width: 100%;
 		}
 
-		//disabling slider interactions for now
-		//#labelContainer:not(.disabled) {
-		//	cursor: grab;
-		//}
-
 		.sliderLabel {
 			margin: 0;
 			padding: 0;
@@ -137,11 +132,6 @@
 			font-weight: 100;
 			font-size: 2em;
 		}
-
-		//disabling slider interactions for now
-		//#labelContainer:hover .sliderLabel {
-		//	color: var(--hovered-color);
-		//}
 
 		#labelContainer.disabled .sliderLabel {
 			color: var(--disabled-color);

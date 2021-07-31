@@ -4,6 +4,11 @@
     flex-direction: column;
 }
 
+::ng-deep router-outlet + * {
+	flex-grow: 1;
+}
+
 app-footnotes {
     margin-top: auto;
+	flex-grow: 0;
 }
