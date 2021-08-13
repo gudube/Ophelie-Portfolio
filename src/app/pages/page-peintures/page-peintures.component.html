@@ -18,5 +18,7 @@
 		</div>
 	</div>
 	<h4 id="title-selected">{{hoverTitle ? hoverTitle : currentTitle}}</h4>
-	<app-photo-grid [pictures]="shownDrawings"></app-photo-grid>
+	<app-photo-grid [pictures]="peintures" [hidden]="currentFilter != filters.Peintures"></app-photo-grid>
+	<app-photo-grid [pictures]="sculptures" [hidden]="currentFilter != filters.Sculptures"></app-photo-grid>
+	<app-photo-grid [pictures]="dessins" [hidden]="currentFilter != filters.Dessins"></app-photo-grid>
 </div>

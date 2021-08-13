@@ -1,0 +1,169 @@
+{
+	"peintures": [
+		{
+			"fileName": "peintures/p9.jpg",
+			"title": "JE VOUS LAISSE L’EXPLORER",
+			"subtitle": "2021, acrylique sur papier d’aquarelle, 212.5 x 122cm",
+			"description": "description",
+			"subImages": ["peintures/p9.jpg"]
+		},
+		{
+			"fileName": "peintures/p8.jpg", 
+			"title": "ANNIE", 
+			"subtitle": "2021, acrylique sur toile, 30.5 x 30.5cm", 
+			"description": "description", 
+			"subImages": ["peintures/p8.jpg"]
+		},
+		{ 
+			"fileName": "peintures/p7.jpg", 
+			"title": "ESPÉRONS, AVANT QUE TOUT NE FONDE", 
+			"subtitle": "2021, acrylique sur toile, 30.5 x 30.5cm", 
+			"description": "description", 
+			"subImages": ["peintures/p7.jpg"] 
+		},
+		{ 
+			"fileName": "peintures/p6.jpg", 
+			"title": "LA TIRADE DU SCORPION", 
+			"subtitle": "2021, acrylique sur toile, 61 x 45.5cm", 
+			"description": "description", 
+			"subImages": ["peintures/p6.jpg"] 
+		},
+		{ 
+			"fileName": "peintures/p5.jpg", 
+			"title": "NE FERME PAS LES YEUX", 
+			"subtitle": "2020, acrylique sur toile, 51 x 40cm", 
+			"description": "description", 
+			"subImages": ["peintures/p5.jpg"] 
+		},
+		{ 
+			"fileName": "peintures/p4.jpg", 
+			"title": "FRAGMENT D’ODYSSÉE", 
+			"subtitle": "2020, acrylique sur toile, 51 x 40cm", 
+			"description": "description", 
+			"subImages": ["peintures/p4.jpg"] 
+		},
+		{ 
+			"fileName": "peintures/p3.jpg", 
+			"title": "DISPARITION", 
+			"subtitle": "2018, acrylique sur toile, 51 x 40cm", 
+			"description": "description", 
+			"subImages": ["peintures/p3.jpg"] 
+		},
+		{ 
+			"fileName": "peintures/p2.jpg", 
+			"title": "AU-DELÀ DU RÉEL", 
+			"subtitle": "2018, acrylique sur toile, 51 x 40cm", 
+			"description": "description", 
+			"subImages": ["peintures/p2.jpg"] 
+		},
+		{ 
+			"fileName": "peintures/p1.jpg", 
+			"title": "PORTAIT D’UN CIEL, UN JOUR QUI N’EXISTE PAS ENCORE", 
+			"subtitle": "2014, acrylique sur toile, 76 x 61cm", 
+			"description": "description", 
+			"subImages": ["peintures/p1.jpg", "peintures/p8.jpg", "peintures/p9.jpg"] 
+		},
+		{ 
+			"fileName": "peintures/p0.jpg", 
+			"title": "GÉOMÉTRIE DE LA NEUTRALITÉ ILLUSOIRE", 
+			"subtitle": "2014, acrylique sur toile, 25 x 20cm", 
+			"description": "description", 
+			"subImages": ["peintures/p0.jpg"] 
+		}
+	],
+	"dessins": [
+		{ 
+			"fileName": "dessins/d8.jpg", 
+			"title": "POUR NE PLUS LES ENTENDRE", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 15 x 23cm", 
+			"description": "description", 
+			"subImages": ["dessins/d8.jpg"] 
+		},
+		{ 
+			"fileName": "dessins/d7.jpg", 
+			"title": "CES CRIS QUE L\"ON SE REFUSE", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 15 x 23cm", 
+			"description": "description", 
+			"subImages": ["dessins/d7.jpg"] 
+		},
+		{ 
+			"fileName": "dessins/d6.jpg", 
+			"title": "EN MORCEAUX", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm", 
+			"description": "description", 
+			"subImages": ["dessins/d6.jpg"] 
+		},
+		{ 
+			"fileName": "dessins/d5.jpg", 
+			"title": "DES TOURNESOLS PARTICULIERS", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm", 
+			"description": "description", 
+			"subImages": ["dessins/d5.jpg"] 
+		},
+		{ 
+			"fileName": "dessins/d4.jpg", 
+			"title": "COEUR LIQUIDE", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm", 
+			"description": "description", 
+			"subImages": ["dessins/d4.jpg"] 
+		},
+		{ 
+			"fileName": "dessins/d3.jpg", 
+			"title": "QUAND LES PLEURS SONT ACIDES", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm", 
+			"description": "description", 
+			"subImages": ["dessins/d3.jpg"] 
+		},
+		{ 
+			"fileName": "dessins/d2.jpg", 
+			"title": "REALITÉ ALTERNATIVE", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 10.5cm", 
+			"description": "description", 
+			"subImages": ["dessins/d2.jpg"] 
+		},
+		{ 
+			"fileName": "dessins/d1.jpg", 
+			"title": "CHHHUT", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 11 x 14cm", 
+			"description": "description", 
+			"subImages": ["dessins/d1.jpg"] 
+		},
+		{ 
+			"fileName": "dessins/d0.jpg", 
+			"title": "CROQUIS", 
+			"subtitle": "2021, crayon à mine sur papier à dessin, 21.5 x 28cm", 
+			"description": "description",
+			"subImages": ["dessins/d0.jpg"] 
+		}
+	],
+	"sculptures": [
+		{ 
+			"fileName": "sculptures/s1.jpg", 
+			"title": "titre 8", 
+			"subtitle": "sous-titre 8", 
+			"description": "description", 
+			"subImages": ["sculptures/s1.jpg"] 
+		},
+		{ 
+			"fileName": "sculptures/s2.jpg", 
+			"title": "titre 8", 
+			"subtitle": "sous-titre 8", 
+			"description": "description", 
+			"subImages": ["sculptures/s2.jpg"] 
+		},
+		{ 
+			"fileName": "sculptures/s3.jpg", 
+			"title": "titre 8", 
+			"subtitle": "sous-titre 8", 
+			"description": "description", 
+			"subImages": ["sculptures/s3.jpg"] 
+		},
+		{ 
+			"fileName": "sculptures/s4.jpg", 
+			"title": "titre 8", 
+			"subtitle": "sous-titre 8", 
+			"description": "description", 
+			"subImages": ["sculptures/s4.jpg"] 
+		}
+	]
+}
