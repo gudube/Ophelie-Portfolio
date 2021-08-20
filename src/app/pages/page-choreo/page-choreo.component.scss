@@ -1,3 +1,8 @@
+:host {
+	display: flex;
+	flex-direction: column;
+}
+
 #container {
 	background-image: url("/assets/background-danse.jpg");
 	background-repeat: no-repeat;
@@ -5,6 +10,7 @@
 	background-attachment: fixed;
 	background-position-x: center;
 	background-position-y: center;
+	flex-grow: 1;
 }
 
 app-spotlight-list {
