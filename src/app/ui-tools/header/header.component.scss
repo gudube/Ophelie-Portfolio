@@ -30,6 +30,8 @@ header{
     padding: 0;
     width: fit-content;
     margin: 30px auto 25px auto;
+	position: relative;
+
     li {
         display: inline-block;
 		position: relative;
@@ -72,6 +74,16 @@ header{
         //     color: var(--hovered-color);
         // }
     }
+
+	#activeIndicator {
+		position: absolute;
+		height: 2px;
+		width: 30px;
+		border-radius: 2px;
+		background-color: var(--accent-color);
+		bottom: -5px;
+		transform: translateX(-50%);
+	}
 }
 
 app-social-logos {
