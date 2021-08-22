@@ -46,11 +46,13 @@
 			height: 120px;
 			span {
 				font-family: 'Halfomania';
-				font-size: 4rem;
+				font-size: 3rem;
 				display: inline-block;
-				height: 100%;
-				line-height: 1em;
+				// height: 100%;
+				// line-height: 3.75rem;
 				vertical-align: middle;
+				font-weight: 600;
+				transform: translateY(-19%);
 			}
         }
         h2 {
@@ -72,6 +74,9 @@
 		@media only screen and (max-width: 1000px) {
 			h1 {
 				font-size: 6em;
+				span {
+					font-size: 2rem;
+				}
 			}
 			h2 {
 				font-size: 1.5em;
@@ -83,6 +88,9 @@
 		@media only screen and (max-width: 500px) {
 			h1 {
 				font-size: 4em;
+				span {
+					font-size: 1.5rem;
+				}
 			}
 			h2 {
 				font-size: 1.2em;
