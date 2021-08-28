@@ -1,5 +1,7 @@
-import { Component, ElementRef, EventEmitter, HostListener, Input, Output, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Input, Output, Renderer2, SecurityContext, ViewChild } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 import { PictureModel } from '../photo-grid/picture-model';
+import { SpotlightModel } from '../spotlight-item/spotlight-model';
 
 @Component({
 	selector: 'app-full-image-viewer',
@@ -31,16 +33,36 @@ export class FullImageViewerComponent {
 
 	public showImage = false;
 
-	public image!: PictureModel;
+	public showingItemInsteadOfImage = false;
+
+	public image: PictureModel | undefined;
+
+	public item: SpotlightModel | undefined;
+
+	public get shownDescription(): string {
+		if (this.image) return this.image.description;
+		return this.item?.description || '';
+	}
+
+	public cleanUrl: SafeResourceUrl | null = null;
 
 	public shownSubImageNum = 0;
 
-	constructor(private renderer: Renderer2) { }
+	constructor(private renderer: Renderer2, private sanatizer: DomSanitizer) { }
 
 	public setImage(image: PictureModel): void {
 		this.image = image;
 		this.shownSubImageNum = 0;
 		this.showImage = true;
+		this.showingItemInsteadOfImage = false;
+	}
+
+	public setItem(item: SpotlightModel): void {
+		this.item = item;
+		this.hasPreviousImage = false;
+		this.hasNextImage = false;
+		this.cleanUrl = this.sanatizer.bypassSecurityTrustResourceUrl(item.videoUrl);
+		this.showingItemInsteadOfImage = true;
 	}
 
 	public hide(): void {
@@ -70,7 +92,7 @@ export class FullImageViewerComponent {
 	}
 
 	public changeSubImage(next: boolean) : void {
-		if (next && this.shownSubImageNum + 1 < this.image.subImages.length) {
+		if (next && this.image && this.shownSubImageNum + 1 < this.image.subImages.length) {
 			this.shownSubImageNum += 1;
 		}
 		if (!next && this.shownSubImageNum - 1 >= 0) {

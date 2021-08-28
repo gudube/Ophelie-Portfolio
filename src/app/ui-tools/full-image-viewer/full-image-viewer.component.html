@@ -25,7 +25,9 @@
 			</svg>
 	</div>
 	<div id="imgContainer" class="noselect">
-		<div #smallImgContainer id="smallImgContainer">
+		<iframe id="smallVideoContainer" *ngIf="showingItemInsteadOfImage && item" [src]="cleanUrl">
+		</iframe>
+		<div #smallImgContainer id="smallImgContainer" *ngIf="!showingItemInsteadOfImage && image">
 			<div id="subImageIndicators" *ngIf="image.subImages.length > 1">
 				<div class="subImageIndicator" *ngFor="let subImage of image.subImages; let i = index" [ngClass]="{'selected': shownSubImageNum == i}"></div>
 			</div>
@@ -35,7 +37,7 @@
 		</div>
 	</div>
 	<div id="description-separator"></div>
-	<p id="description">{{image.description}}</p>
+	<p id="description">{{shownDescription}}</p>
 	<div class="arrowContainer hoverable rightArrow" *ngIf="hasNextImage"  (click)="changeImage(true)">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		viewBox="0 0 269.97 837.34" style="enable-background:new 0 0 269.97 837.34;" xml:space="preserve">
