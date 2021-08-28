@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { FootnotesComponent } from './footnotes/footnotes.component';
@@ -30,6 +31,7 @@ import { SocialLogosComponent } from './social-logos/social-logos.component';
 		CommonModule,
 		AppRoutingModule,
 		MatIconModule,
+		MatProgressSpinnerModule,
 	],
 	exports: [
 		HeaderComponent,

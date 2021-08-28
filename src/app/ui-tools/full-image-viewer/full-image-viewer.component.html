@@ -25,6 +25,7 @@
 			</svg>
 	</div>
 	<div id="imgContainer" class="noselect">
+		<mat-spinner *ngIf="!assetLoaded"></mat-spinner>
 		<iframe id="smallVideoContainer" *ngIf="showingItemInsteadOfImage && item" [src]="cleanUrl">
 		</iframe>
 		<div #smallImgContainer id="smallImgContainer" *ngIf="!showingItemInsteadOfImage && image">

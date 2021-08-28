@@ -48,9 +48,12 @@ export class FullImageViewerComponent {
 
 	public shownSubImageNum = 0;
 
+	public assetLoaded = false;
+
 	constructor(private renderer: Renderer2, private sanatizer: DomSanitizer) { }
 
 	public setImage(image: PictureModel): void {
+		this.assetLoaded = false;
 		this.image = image;
 		this.shownSubImageNum = 0;
 		this.showImage = true;
@@ -58,6 +61,7 @@ export class FullImageViewerComponent {
 	}
 
 	public setItem(item: SpotlightModel): void {
+		this.assetLoaded = false;
 		this.item = item;
 		this.hasPreviousImage = false;
 		this.hasNextImage = false;
@@ -77,6 +81,11 @@ export class FullImageViewerComponent {
 		this.nextImage.emit(nextImage);
 	}
 
+	public finishedLoadingAsset(): void {
+		this.resetArrowsPositions();
+		this.assetLoaded = true;
+	}
+
 	@HostListener('window:resize')
 	public resetArrowsPositions(): void {
 		if (this.imgContainer && this.fullImg && (this.previousSubArrow || this.nextSubArrow)) {
@@ -93,9 +102,11 @@ export class FullImageViewerComponent {
 
 	public changeSubImage(next: boolean) : void {
 		if (next && this.image && this.shownSubImageNum + 1 < this.image.subImages.length) {
+			this.assetLoaded = false;
 			this.shownSubImageNum += 1;
 		}
 		if (!next && this.shownSubImageNum - 1 >= 0) {
+			this.assetLoaded = false;
 			this.shownSubImageNum -= 1;
 		}
 	}
