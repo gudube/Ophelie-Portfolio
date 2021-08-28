@@ -3,4 +3,5 @@ export interface SpotlightModel {
 	title: string;
 	subtitle: string;
 	description: string;
+	videoUrl: string;
 }

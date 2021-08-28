@@ -8,7 +8,7 @@ import { SpotlightModel } from './spotlight-model';
 })
 export class SpotlightItemComponent implements OnInit {
 	@Input() public content: SpotlightModel = {
-		fileName: '', title: '', subtitle: '', description: '',
+		fileName: '', title: '', subtitle: '', description: '', videoUrl: '',
 	};
 
 	constructor() { }
