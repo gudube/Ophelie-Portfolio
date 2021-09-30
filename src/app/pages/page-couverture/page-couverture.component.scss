@@ -33,11 +33,30 @@
 	  visibility: visible;
 	}
 }
+
+@keyframes disappear-anim {
+	0% {
+	  opacity: 100%;
+	  visibility: visible;
+	}
+	100% {
+	  opacity: 0%;
+	  visibility: visible;
+	}
+}
+
+.disappear {
+	animation: 0.1s linear 0s 1 disappear-anim !important;
+	animation-fill-mode: forwards;
+}
  
 #enter-button {
-	opacity: 0;
 	visibility: collapse;
-	animation: 0s forwards 1.8s 1 appear-fast;
+	&, h1 {
+		opacity: 0;
+		animation: 0s ease-in-out 1.8s 1 appear-fast;
+		animation-fill-mode: forwards;
+	}
 
 	position: fixed;
 	top: 50%;
@@ -66,7 +85,7 @@ h1 {
 	font-family: 'HP-Simplified-Bold';
 	font-size: 7em;
 	margin: 0;
-	opacity: 100%;
+	opacity: 0;
 }
 
 img {
