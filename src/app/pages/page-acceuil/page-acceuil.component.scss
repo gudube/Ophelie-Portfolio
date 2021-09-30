@@ -3,12 +3,33 @@
 	display: flex;
 	flex-direction: column;
 }
+
+@keyframes appear {
+	0% {
+	  opacity: 0%;
+	}
+	100% {
+	  opacity: 100%;
+	}
+}
+
+#arrow-down {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(25px) rotateZ(270deg);
+	width: 100px;
+	height: 100px;
+	fill: rgb(13,13,13);
+}
+
 #main-container {
 	flex: 1 1 0;
     position: relative;
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid white;
+	flex-basis: 100vh;
 
     .title-video {
 		position: absolute;
@@ -44,6 +65,9 @@
 			font-family: 'Halfomania';
 			line-height: 0.8em;
 			height: 120px;
+			opacity: 0;
+			animation: 0.5s ease-in-out 2s 1 appear;
+			animation-fill-mode: forwards;
 			span {
 				font-family: 'Halfomania';
 				font-size: 3rem;
@@ -61,6 +85,9 @@
             text-shadow: 2px 2px 4px rgba(black, 0.2);
 			color: var(--accent-color);
 			font-weight: bold;
+			opacity: 0;
+			animation: 0.5s ease-in-out 2s 1 appear;
+			animation-fill-mode: forwards;
         }
 		#logo {
 			margin-left: auto;
@@ -69,6 +96,9 @@
 			flex-grow: 1;
 			fill: white;
 			width: 430px;
+			opacity: 0;
+			animation: 0.5s ease-in-out 1.5s 1 appear;
+			animation-fill-mode: forwards;
 			// filter: drop-shadow( 1px 1px 5px rgba(255, 255, 255, 0.5));
 		}
 		@media only screen and (max-width: 1000px) {
@@ -100,4 +130,100 @@
 			}
 		}
     }
+}
+
+app-header {
+	position: fixed;
+	visibility: collapse;
+}
+
+#main-content {
+	height: 1000px;
+	position: relative;
+
+	.title-video {
+		position: absolute;
+		transform: scaleY(-1);
+        background-color: black;
+        width: 100%;
+        height: 100%;
+		object-fit: cover;
+        z-index: -5;
+		opacity: 0.1;
+    }
+	#citation {
+		justify-content: center;
+		display: flex;
+		flex-direction: row;
+		.texte {
+			font-family: 'HP-Simplified-Bold';
+			font-size: 2.3em;
+			margin: 150px 70px;
+			line-height: 1.7em;
+			text-align: justify;
+			max-width: 1500px;
+			color: var(--accent-color);
+		}
+		.guillemet {
+			font-family: 'Martina';
+			font-size: 9em;
+			margin: 0;
+			align-self: center;
+			margin-bottom: 10px;
+			color: var(--accent-color);
+		}
+	}
+}
+
+#categories-img {
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	max-width: 1200px;
+
+	.categorie-img {
+		margin: 50px 50px;
+		width: 200px;
+		text-decoration: none;
+		position: relative;
+
+		&:hover {
+			cursor: pointer;		
+			opacity: var(--hovered-opacity);
+			transition: opacity 0.2s;
+		}
+
+		.image-container {
+			height: 200px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+			}
+		}
+		p {
+			margin: 0;
+			padding: 20px;
+			box-sizing: border-box;
+			font-size: 2em;
+			width: 100%;
+			text-align: center;
+			font-family: 'Blackout';
+		}
+	}
+
+	&.small {
+		.categorie-img {
+			width: 70px;
+			.image-container {
+				height: 70px;
+			}
+			p {
+				display: none;
+			}
+		}
+	}
 }
