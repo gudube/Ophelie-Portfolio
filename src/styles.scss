@@ -39,7 +39,7 @@ $Ophelie-Portfolio-theme: mat-light-theme((
 :root {
 	--primary-text-color: white;
 	--background-color: black;
-	--accent-color: #F56600;
+	--accent-color: #F8B995;
 	--hovered-color: #BABABA;
 	--hoverable-color: white;
 	--disabled-color: rgba(255, 255, 255, 0.3);
@@ -57,6 +57,11 @@ h1, h2, h3, h4, a, p, span, div {
     font-family: 'Bahnschrift', Roboto, "Helvetica Neue", sans-serif;
     color: var(--primary-text-color);
     font-weight: 300;
+}
+
+@font-face {
+	font-family: 'HP-Simplified-Bold';
+	src: url('/assets/fonts/hp-simplified-bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -79,7 +84,7 @@ h1, h2, h3, h4, a, p, span, div {
 	// cursor: pointer;
 	cursor: pointer;
 	color: var(--hoverable-color);
-	a, p, h2, h3, h4, span {
+	a, p, h1, h2, h3, h4, span {
 		color: inherit;
 	}
 	svg {
@@ -92,7 +97,7 @@ h1, h2, h3, h4, a, p, span, div {
 		color: var(--hoverable-color);
         transition: color 0.2s;
 
-		a, p, h2, h3, h4, span {
+		a, p, h1, h2, h3, h4, span {
 		    color: inherit;
             transition: color 0.2s;
 		}

@@ -6,6 +6,7 @@ import { PageAcceuilComponent } from './pages/page-acceuil/page-acceuil.componen
 import { PageBiographieComponent } from './pages/page-biographie/page-biographie.component';
 import { PageChoreoComponent } from './pages/page-choreo/page-choreo.component';
 import { PageContactComponent } from './pages/page-contact/page-contact.component';
+import { PageCouvertureComponent } from './pages/page-couverture/page-couverture.component';
 import { PageDemarchesComponent } from './pages/page-demarches/page-demarches.component';
 import { PageErreurComponent } from './pages/page-erreur/page-erreur.component';
 import { PageExperiencesComponent } from './pages/page-experiences/page-experiences.component';
@@ -53,6 +54,12 @@ class BasicData implements SeoData {
 const routes: TypedRoutes = [
 	{
 		path: '',
+		pathMatch: 'full',
+		component: PageCouvertureComponent,
+		data: new BasicData('', defaultTitle, 'Découvrez le profil et les créations d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+	},
+	{
+		path: 'accueil',
 		pathMatch: 'full',
 		component: PageAcceuilComponent,
 		data: new BasicData('', defaultTitle, 'Découvrez le profil et les créations d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),

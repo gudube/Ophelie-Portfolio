@@ -13,6 +13,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { PageExperiencesComponent } from './page-experiences/page-experiences.component';
 import { PageDemarchesComponent } from './page-demarches/page-demarches.component';
 import { PageBiographieComponent } from './page-biographie/page-biographie.component';
+import { PageCouvertureComponent } from './page-couverture/page-couverture.component';
 
 @NgModule({
 	declarations: [
@@ -26,6 +27,7 @@ import { PageBiographieComponent } from './page-biographie/page-biographie.compo
 		PageExperiencesComponent,
   PageDemarchesComponent,
   PageBiographieComponent,
+  PageCouvertureComponent,
 	],
 	imports: [
 		CommonModule,
