@@ -41,3 +41,14 @@
 	margin: auto;
 	opacity: 0.4;
 }
+
+#eyes {
+	object-fit: contain;
+	width: 70%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	margin: 0;
+	opacity: 1;
+}

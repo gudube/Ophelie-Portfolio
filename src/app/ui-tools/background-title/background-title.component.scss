@@ -1,0 +1,14 @@
+
+#title {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	color: rgb(13,13,13);
+	text-align: center;
+	font-size: 20vw;	
+	margin: 0;
+	font-family: "HP-Simplified-Bold";
+	width: 100%;
+	transform: translate(-50%, -50%) scaleY(2.5);
+	z-index: -1;
+}

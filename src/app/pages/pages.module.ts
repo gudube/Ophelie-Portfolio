@@ -25,9 +25,9 @@ import { PageCouvertureComponent } from './page-couverture/page-couverture.compo
 		PagePublicationsComponent,
 		PageAboutComponent,
 		PageExperiencesComponent,
-  PageDemarchesComponent,
-  PageBiographieComponent,
-  PageCouvertureComponent,
+		PageDemarchesComponent,
+		PageBiographieComponent,
+		PageCouvertureComponent,
 	],
 	imports: [
 		CommonModule,

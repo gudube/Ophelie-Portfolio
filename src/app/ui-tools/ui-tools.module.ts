@@ -13,6 +13,7 @@ import { TitleHeaderComponent } from './title-header/title-header.component';
 import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.component';
 import { MenuCirclesComponent } from './menu-circles/menu-circles.component';
 import { SocialLogosComponent } from './social-logos/social-logos.component';
+import { BackgroundTitleComponent } from './background-title/background-title.component';
 
 @NgModule({
 	declarations: [
@@ -26,6 +27,7 @@ import { SocialLogosComponent } from './social-logos/social-logos.component';
 		FullImageViewerComponent,
 		MenuCirclesComponent,
 		SocialLogosComponent,
+		BackgroundTitleComponent,
 	],
 	imports: [
 		CommonModule,
@@ -43,6 +45,7 @@ import { SocialLogosComponent } from './social-logos/social-logos.component';
 		TitleHeaderComponent,
 		MenuCirclesComponent,
 		SocialLogosComponent,
+		BackgroundTitleComponent,
 	],
 })
 export class UiToolsModule { }
