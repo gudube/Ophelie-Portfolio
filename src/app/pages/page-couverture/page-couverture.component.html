@@ -1,4 +1,8 @@
-<img #bgImage id="bg-image" src="/assets/couverture.jpg"/>
+<picture>
+	<source srcset="/assets/couverture.webp" type="image/webp">
+	<source srcset="/assets/couverture.jpg" type="image/jpeg"> 
+	<img src="/assets/couverture.jpg" alt="Alt Text!"  #bgImage id="bg-image" >
+</picture>
 <div #enterButton id="enter-button" class="hoverable" (click)="enter()">
-	<h1>ENTRER</h1>
+	<h1 #enterText id="enter-text" >ENTRER</h1>
 </div>

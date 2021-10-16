@@ -25,39 +25,49 @@
 
 @keyframes appear-fast {
 	0% {
-	  opacity: 0%;
-	  visibility: visible;
+		opacity: 0%;
+		visibility: collapse;
+	}
+	1% {
+		opacity: 0%;
+		visibility: visible;
 	}
 	100% {
-	  opacity: 100%;
-	  visibility: visible;
+		opacity: 100%;
+		visibility: visible;
 	}
 }
 
 @keyframes disappear-anim {
 	0% {
-	  opacity: 100%;
-	  visibility: visible;
+		// opacity: 100%;
+		visibility: visible;
+	}
+	99% {
+		opacity: 0%;
+		visibility: visible;
 	}
 	100% {
-	  opacity: 0%;
-	  visibility: visible;
+		opacity: 0%;
+		visibility: collapse;
 	}
 }
 
 .disappear {
 	animation: 0.1s linear 0s 1 disappear-anim !important;
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards !important;
+	@media (hover: hover) {
+		&#enter-text {
+			opacity: var(--hovered-opacity);
+		}
+	}
 }
  
 #enter-button {
-	visibility: collapse;
-	&, h1 {
-		opacity: 0;
+	&, #enter-text {
 		animation: 0s ease-in-out 1.8s 1 appear-fast;
-		animation-fill-mode: forwards;
+		animation-fill-mode: backwards;
 	}
-
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -65,34 +75,33 @@
 	width: 100%;
 	height: auto;
 	background-color: rgba(0,0,0,1);
-	@media (hover: hover) {
-		h1 {
-			transition: opacity 0.2s;
-		}
-		&:hover {
-			h1 {
-				opacity: var(--hovered-opacity);
+	&.hoverable {
+		@media (hover: hover) {
+			#enter-text {
+				transition: opacity 0.2s;
+			}
+			&:hover {
+				#enter-text {
+					opacity: var(--hovered-opacity);
+				}
 			}
 		}
 	}
 	
 }
 
-h1 {
+#enter-text {
 	color: var(--accent-color);
 	width: 100%;
 	text-align: center;
 	font-family: 'HP-Simplified-Bold';
 	font-size: 7em;
 	margin: 0;
-	opacity: 0;
 }
 
 img {
-	opacity: 0;
 	animation: 1s ease-in 0.5s 1 appear-slow;
-	animation-fill-mode: forwards;
-
+	animation-fill-mode: backwards;
 	position: fixed;
 	z-index: -1;
 	width: 100%;

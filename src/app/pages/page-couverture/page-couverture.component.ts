@@ -12,14 +12,17 @@ export class PageCouvertureComponent implements OnInit {
 
 	@ViewChild('enterButton') enterButton!: ElementRef;
 
+	@ViewChild('enterText') enterText!: ElementRef;
+
 	constructor(private router: Router) { }
 
 	ngOnInit(): void {
 	}
 
 	public enter(): void {
-		this.enterButton.nativeElement.classList.add('disappear');
 		this.bgImage.nativeElement.classList.add('disappear');
+		this.enterText.nativeElement.classList.add('disappear');
+		this.enterButton.nativeElement.classList.remove('hoverable');
 
 		setTimeout(() => {
 			this.router.navigate(['/accueil']);
