@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MetaDefinition } from '@angular/platform-browser';
 import { RouterModule, Route } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { PageAboutComponent } from './pages/page-about/page-about.component';
@@ -14,17 +15,18 @@ import { PagePeinturesComponent } from './pages/page-peintures/page-peintures.co
 import { PagePublicationsComponent } from './pages/page-publications/page-publications.component';
 
 // for SEO rank on Google / metadata when using the link on other sites
-interface SeoData {
+export interface SeoData {
 	title: string;
-	metaTags: {
-		name?: string,
-		property?: string,
-		content: string
-	}[];
+	metaTags: MetaDefinition[];
+}
+
+export interface TypedRouteData {
+	seo: SeoData;
+	showHeader: boolean;
 }
 
 interface TypedRoute extends Route {
-	data: SeoData;
+	data: TypedRouteData;
 }
 
 type TypedRoutes = TypedRoute[];
@@ -33,22 +35,25 @@ const defaultTitle = 'OPHELIE ART | Portfolio';
 const defaultDescription = '';
 const defaultImage = '';
 
-class BasicData implements SeoData {
+class BasicData implements TypedRouteData {
 	constructor(route: string, title: string = defaultTitle, description: string = defaultDescription,
-		image: string = defaultImage) {
-		this.title = title;
-		this.metaTags = [
-			{ name: 'description', content: description },
-			{ property: 'og:title', content: title },
-			{ property: 'og:description', content: description },
-			{ property: 'og:image', content: image },
-			{ property: 'og:url', content: `${environment.baseUrl}${route}` },
-		];
+		showHeader = false, image: string = defaultImage) {
+		this.seo = {
+			title,
+			metaTags: [
+				{ name: 'description', content: description },
+				{ property: 'og:title', content: title },
+				{ property: 'og:description', content: description },
+				{ property: 'og:image', content: image },
+				{ property: 'og:url', content: `${environment.baseUrl}${route}` },
+			],
+		};
+		this.showHeader = showHeader;
 	}
 
-	title: string;
+	seo: SeoData;
 
-	metaTags: { name?: string | undefined; property?: string | undefined; content: string; }[];
+	showHeader: boolean;
 }
 
 const routes: TypedRoutes = [
@@ -68,45 +73,45 @@ const routes: TypedRoutes = [
 		path: 'a-propos',
 		pathMatch: 'full',
 		component: PageAboutComponent,
-		data: new BasicData('a-propos', 'OPHELIE ART | Profil', 'Découvrez le profil d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+		data: new BasicData('a-propos', 'OPHELIE ART | Profil', 'Découvrez le profil d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.', true),
 	},
 	{
 		path: 'a-propos/biographie',
 		pathMatch: 'full',
 		component: PageBiographieComponent,
-		data: new BasicData('biographie', 'OPHELIE ART | Biographie', 'Découvrez la biographie d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+		data: new BasicData('biographie', 'OPHELIE ART | Biographie', 'Découvrez la biographie d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.', true),
 	},
 	{
 		path: 'a-propos/demarches',
 		pathMatch: 'full',
 		component: PageDemarchesComponent,
-		data: new BasicData('demarche', 'OPHELIE ART | Démarche artistique', 'Découvrez la démarche artistique d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+		data: new BasicData('demarche', 'OPHELIE ART | Démarche artistique', 'Découvrez la démarche artistique d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.', true),
 	},
 	{
 		path: 'a-propos/experiences',
 		pathMatch: 'full',
 		component: PageExperiencesComponent,
-		data: new BasicData('experiences', 'OPHELIE ART | Expériences', 'Découvrez les expériences en danse et en chorégraphie d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+		data: new BasicData('experiences', 'OPHELIE ART | Expériences', 'Découvrez les expériences en danse et en chorégraphie d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.', true),
 	},
 	{
 		path: 'danses',
 		component: PageChoreoComponent,
-		data: new BasicData('danses', 'OPHELIE ART | Danses & performances', 'Découvrez les créations chorégraphiques d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+		data: new BasicData('danses', 'OPHELIE ART | Danses & performances', 'Découvrez les créations chorégraphiques d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.', true),
 	},
 	{
 		path: 'arts-visuels',
 		component: PagePeinturesComponent,
-		data: new BasicData('arts-visuels', 'OPHELIE ART | Arts visuels', 'Découvrez les créations d\'art visuel d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+		data: new BasicData('arts-visuels', 'OPHELIE ART | Arts visuels', 'Découvrez les créations d\'art visuel d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.', true),
 	},
 	{
 		path: 'publications',
 		component: PagePublicationsComponent,
-		data: new BasicData('publications', 'OPHELIE ART | Publications', 'Découvrez les publications d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+		data: new BasicData('publications', 'OPHELIE ART | Publications', 'Découvrez les publications d’Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.', true),
 	},
 	{
 		path: 'contact',
 		component: PageContactComponent,
-		data: new BasicData('contact', 'OPHELIE ART | Contact', 'Contactez Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.'),
+		data: new BasicData('contact', 'OPHELIE ART | Contact', 'Contactez Ophélie.Art, danseuse, chorégraphe et artiste contemporaine multidisciplinaire.', true),
 	},
 	{
 		path: '**',

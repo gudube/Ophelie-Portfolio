@@ -12,6 +12,5 @@ export class MenuCirclesComponent implements OnInit {
 	public small = false;
 
 	ngOnInit(): void {
-		console.log(this.small);
 	}
 }

@@ -1,11 +1,12 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { Event, NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 @Component({
 	selector: 'app-header',
 	templateUrl: './header.component.html',
 	styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements AfterViewInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
 	@ViewChild('onglets')
 	ongletsContainer!: any;
 
@@ -13,7 +14,17 @@ export class HeaderComponent implements AfterViewInit {
 
 	public visibleIndicator = false;
 
-	constructor() { }
+	constructor(private router: Router) { }
+
+	ngOnInit(): void {
+		this.router.events.subscribe((event: Event) => {
+			if (event instanceof NavigationEnd) {
+				setTimeout(() => {
+					this.computeIndicatorPos();
+				}, 0);
+			}
+		});
+	}
 
 	ngAfterViewInit(): void {
 		setTimeout(() => {
@@ -27,7 +38,6 @@ export class HeaderComponent implements AfterViewInit {
 			this.visibleIndicator = false;
 		} else {
 			const activeOnglet = activeOnglets[0] as HTMLElement;
-			console.log(this.ongletsContainer.nativeElement.clientLeft);
 			this.indicatorPos = activeOnglet.offsetLeft + activeOnglet.clientWidth / 2;
 			this.visibleIndicator = true;
 		}

@@ -1,4 +1,5 @@
 <div id="app-container">
-    <router-outlet></router-outlet>
+	<app-header *ngIf="showHeader"></app-header>
+	<router-outlet></router-outlet>
     <app-footnotes></app-footnotes>
 </div>
