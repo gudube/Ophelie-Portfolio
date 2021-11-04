@@ -10,4 +10,11 @@ export class PageAcceuilComponent implements OnInit {
 
 	ngOnInit(): void {
 	}
+
+	public scrollDown(): void {
+		const offset = document.getElementById('main-content')?.offsetTop;
+		if (offset) {
+			window.scrollTo({ top: offset - 60, behavior: 'smooth' });
+		}
+	}
 }
