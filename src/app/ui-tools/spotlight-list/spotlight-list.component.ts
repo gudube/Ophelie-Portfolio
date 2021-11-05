@@ -29,25 +29,23 @@ export class SpotlightListComponent implements OnInit {
 		}
 	}
 
-	private showingFullItem = false;
+	private _showingFullItem = false;
 
-	public get ShowingFullItem(): boolean {
-		return this.showingFullItem;
+	public get showingFullItem(): boolean {
+		return this._showingFullItem;
 	}
 
 	@Input()
-	public set ShowingFullItem(newValue: boolean) {
+	public set showingFullItem(newValue: boolean) {
 		if (newValue) document.body.style.overflow = 'hidden';
 		else document.body.style.overflow = 'auto';
-		this.showingFullItem = newValue;
+		this._showingFullItem = newValue;
 	}
 
-	private selectedItem: SpotlightModel | undefined;
-
 	public selectItem(item: SpotlightModel): void {
-		this.selectedItem = item;
-		this.imageViewer.setItem(this.selectedItem);
-		this.ShowingFullItem = true;
+		this.imageViewer.items = [item.videoUrl];
+		this.imageViewer.description = item.description;
+		this.showingFullItem = true;
 	}
 
 	ngOnDestroy(): void {

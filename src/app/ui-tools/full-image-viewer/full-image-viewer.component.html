@@ -24,21 +24,9 @@
 			</g>
 			</svg>
 	</div>
-	<div id="imgContainer" class="noselect">
-		<mat-spinner *ngIf="!assetLoaded"></mat-spinner>
-		<iframe id="smallVideoContainer" *ngIf="showingItemInsteadOfImage && item" [src]="cleanUrl">
-		</iframe>
-		<div #smallImgContainer id="smallImgContainer" *ngIf="!showingItemInsteadOfImage && image">
-			<div id="subImageIndicators" *ngIf="image.subImages.length > 1">
-				<div class="subImageIndicator" *ngFor="let subImage of image.subImages; let i = index" [ngClass]="{'selected': shownSubImageNum == i}"></div>
-			</div>
-			<mat-icon #subpreviousIcon id="subprevious-icon" *ngIf="shownSubImageNum > 0" aria-hidden="false" aria-label="Previous sub-image" (click)="changeSubImage(false)">navigate_before</mat-icon>
-			<img #fullImg src="/assets/{{image.subImages[shownSubImageNum]}}" *ngIf="this.showImage" alt="Full Size Image" (load)="resetArrowsPositions()">
-			<mat-icon #subnextIcon id="subnext-icon" *ngIf="shownSubImageNum + 1 < image.subImages.length" aria-hidden="false" aria-label="Next sub-image" (click)="changeSubImage(true)">navigate_next</mat-icon>
-		</div>
-	</div>
+	<app-image-viewer id="image-viewer" [items]="items"></app-image-viewer>
 	<div id="description-separator"></div>
-	<p id="description">{{shownDescription}}</p>
+	<p id="description">{{this.description}}</p>
 	<div class="arrowContainer hoverable rightArrow" *ngIf="hasNextImage"  (click)="changeImage(true)">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		viewBox="0 0 269.97 837.34" style="enable-background:new 0 0 269.97 837.34;" xml:space="preserve">

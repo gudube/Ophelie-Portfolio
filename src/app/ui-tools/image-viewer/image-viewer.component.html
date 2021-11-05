@@ -1,0 +1,19 @@
+<div #mainContainer id="mainContainer" class="noselect">
+	<mat-spinner *ngIf="!itemLoaded"></mat-spinner>
+	<mat-icon #previousIcon id="previous-icon" aria-hidden="false" aria-label="Previous sub-image" 
+		[style.visibility]="(shownItemNum > 0 && itemLoaded) ? 'visible' : 'hidden'" (click)="changeImage(false)">navigate_before</mat-icon>
+	<mat-icon #nextIcon id="next-icon" aria-hidden="false" aria-label="Next sub-image" 
+		[style.visibility]="(shownItemNum + 1 < items.length && itemLoaded) ? 'visible' : 'hidden'" (click)="changeImage(true)">navigate_next</mat-icon>
+	<div id="videoContainer" *ngIf="!this.shownIsImage" >
+		<iframe id="videoFrame" [src]="items[shownItemNum] | safe" (load)="finishedLoadingAsset()"></iframe>
+		<div id="posIndicators" *ngIf="items.length > 1">
+			<div class="posIndicator" *ngFor="let item of items; let i = index" [ngClass]="{'selected': shownItemNum == i}"></div>
+		</div>	
+	</div>
+	<div id="imgContainer" *ngIf="this.shownIsImage">
+		<img #fullImg src="/assets/{{items[shownItemNum]}}" alt="Full Size Image" (load)="finishedLoadingAsset()">
+		<div id="posIndicators" *ngIf="items.length > 1">
+			<div class="posIndicator" *ngFor="let item of items; let i = index" [ngClass]="{'selected': shownItemNum == i}"></div>
+		</div>
+	</div>
+</div>

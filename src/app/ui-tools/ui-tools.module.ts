@@ -14,6 +14,7 @@ import { FullImageViewerComponent } from './full-image-viewer/full-image-viewer.
 import { MenuCirclesComponent } from './menu-circles/menu-circles.component';
 import { SocialLogosComponent } from './social-logos/social-logos.component';
 import { BackgroundTitleComponent } from './background-title/background-title.component';
+import { ImageViewerComponent, SafePipe } from './image-viewer/image-viewer.component';
 
 @NgModule({
 	declarations: [
@@ -28,6 +29,8 @@ import { BackgroundTitleComponent } from './background-title/background-title.co
 		MenuCirclesComponent,
 		SocialLogosComponent,
 		BackgroundTitleComponent,
+		ImageViewerComponent,
+		SafePipe,
 	],
 	imports: [
 		CommonModule,

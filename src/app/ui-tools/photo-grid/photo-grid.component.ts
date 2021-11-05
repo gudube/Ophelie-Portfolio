@@ -38,7 +38,8 @@ export class PhotoGridComponent {
 
 	public selectImage(index: number): void {
 		this.selectedPicture = this.pictures[index];
-		this.imageViewer.setImage(this.selectedPicture);
+		this.imageViewer.items = this.selectedPicture.subImages;
+		this.imageViewer.description = this.selectedPicture.description;
 
 		this.hasPreviousImage = index > 0;
 		this.hasNextImage = index < this.pictures.length - 1;
