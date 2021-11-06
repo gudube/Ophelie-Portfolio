@@ -1,24 +1,22 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import * as arts from 'src/assets/arts.json';
-import { PictureModel } from '../../ui-tools/photo-grid/picture-model';
 
 // eslint-disable-next-line no-shadow
 enum Filter { None = '', Peintures = 'peintures/', Dessins = 'dessins/', Sculptures = 'sculptures/' }
 
 @Component({
-	selector: 'app-page-peintures',
-	templateUrl: './page-peintures.component.html',
-	styleUrls: ['./page-peintures.component.scss'],
+	selector: 'app-page-arts-visuels',
+	templateUrl: './page-arts-visuels.component.html',
+	styleUrls: ['./page-arts-visuels.component.scss'],
 })
-export class PagePeinturesComponent implements OnInit {
+export class PageArtsVisuelsComponent implements OnInit {
 	@ViewChild('photoGrid')
 	public photoGrid!: ElementRef;
 
-	public peintures: PictureModel[] = arts.peintures;
+	// public peintures: Collection[] = arts.peintures;
 
-	public dessins: PictureModel[] = arts.dessins;
+	// public dessins: Collection[] = arts.dessins;
 
-	public sculptures: PictureModel[] = arts.sculptures;
+	// public sculptures: Collection[] = arts.sculptures;
 
 	public filters = Filter;
 

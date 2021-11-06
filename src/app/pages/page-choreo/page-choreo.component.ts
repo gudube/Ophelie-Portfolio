@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SpotlightModel } from 'src/app/ui-tools/spotlight-item/spotlight-model';
-import * as arts from 'src/assets/arts.json';
+import danses from 'src/assets/danses.json';
 
 @Component({
 	selector: 'app-page-choreo',
@@ -12,7 +12,7 @@ export class PageChoreoComponent implements OnInit {
 	// title: Titre qui apparait sur l'image
 	// subtitle: facultatif (peut être vide avec ''). ajoute du texte en plus petit sous le titre
 	// description: description visible lorsqu'on clique sur l'image
-	public projets: SpotlightModel[] = arts.danses;
+	public projets: SpotlightModel[] = danses;
 
 	constructor() { }
 

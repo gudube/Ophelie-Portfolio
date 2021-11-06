@@ -1,0 +1,10 @@
+<h1 id="title">{{this.collection!.title}}</h1>
+<h2 id="description">{{this.collection!.description}}</h2>
+<div id="text-container">
+	<h3 id="presentation-title">PRÉSENTATION DE LA COLLECTION</h3>
+	<div id="text" [ngClass]="{'collapsed': collapsedText}">{{this.collection!.text}}</div>
+	<div id="collapse-button-container">
+		<mat-icon (click)="collapsedText = !collapsedText">{{collapsedText ? 'keyboard_arrow_down' : 'keyboard_arrow_up'}}</mat-icon>
+	</div>
+</div>
+<app-photo-grid [pictures]="this.collection?.photos || []"></app-photo-grid>

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PagePeinturesComponent } from './page-peintures.component';
+import { PageArtsVisuelsComponent } from './page-arts-visuels.component';
 
 describe('PagePeinturesComponent', () => {
-	let component: PagePeinturesComponent;
-	let fixture: ComponentFixture<PagePeinturesComponent>;
+	let component: PageArtsVisuelsComponent;
+	let fixture: ComponentFixture<PageArtsVisuelsComponent>;
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			declarations: [PagePeinturesComponent],
+			declarations: [PageArtsVisuelsComponent],
 		})
 			.compileComponents();
 	});
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(PagePeinturesComponent);
+		fixture = TestBed.createComponent(PageArtsVisuelsComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

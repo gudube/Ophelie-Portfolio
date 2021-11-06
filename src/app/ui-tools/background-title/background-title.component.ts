@@ -8,10 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BackgroundTitleComponent implements OnInit {
 	@Input() public title = ''
 
-	@Input() public smaller = false
+	@Input() public smaller: boolean | null = null
 
 	constructor() { }
 
 	ngOnInit(): void {
+		if (this.smaller == null) {
+			this.smaller = (this.title.length >= 10);
+		}
 	}
 }

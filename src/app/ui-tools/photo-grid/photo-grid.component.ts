@@ -1,6 +1,6 @@
 import { Input, Component, ViewChild } from '@angular/core';
+import { PictureModel } from 'src/app/models/picture-model';
 import { FullImageViewerComponent } from '../full-image-viewer/full-image-viewer.component';
-import { PictureModel } from './picture-model';
 
 @Component({
 	selector: 'app-photo-grid',
@@ -40,6 +40,7 @@ export class PhotoGridComponent {
 		this.selectedPicture = this.pictures[index];
 		this.imageViewer.items = this.selectedPicture.subImages;
 		this.imageViewer.description = this.selectedPicture.description;
+		this.imageViewer.title = this.selectedPicture.title;
 
 		this.hasPreviousImage = index > 0;
 		this.hasNextImage = index < this.pictures.length - 1;

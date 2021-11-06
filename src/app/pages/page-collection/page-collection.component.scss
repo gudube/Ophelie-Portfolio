@@ -1,0 +1,61 @@
+#title {
+	width: 100%;
+	text-align: center;
+	font-family: 'HP-Simplified-Bold';
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 4em;
+	margin-top: 40px;
+}
+
+#description {
+	width: 100%;
+	text-align: center;
+	font-family: 'HP-Simplified';
+	font-size: 1em;
+}
+
+#text {
+	font-size: 1.3em;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+	-webkit-line-clamp: none;
+	&.collapsed {
+		-webkit-line-clamp: 3;
+	}
+	word-break: keep-all;
+	line-height: 1.5em;
+}
+
+#text-container {
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	max-width: 1175px;
+	margin: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: justify;
+	text-overflow: ellipsis;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-color: dimgrey;
+}
+
+#collapse-button-container {
+	text-align: center;
+	width: 100%;
+	margin: 20px;
+	mat-icon {
+		cursor: pointer;
+	}
+}
+
+#presentation-title {
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}

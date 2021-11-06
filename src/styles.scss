@@ -65,6 +65,11 @@ h1, h2, h3, h4, a, p, span, div {
 }
 
 @font-face {
+	font-family: 'HP-Simplified';
+	src: url('/assets/fonts/hp-simplified.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: 'Halfomania';
 	src: url('/assets/fonts/Halfomania-Regular.otf'),
 		url('/assets/fonts/Halfomania-Regular.ttf') format('truetype');
@@ -95,6 +100,11 @@ h1, h2, h3, h4, a, p, span, div {
 	svg {
 		fill: var(--hoverable-color);
 	}
+	@at-root {
+		img#{&} {
+			filter: brightness(1);
+		}
+	}
 	img {
 		opacity: var(--hoverable-opacity);
 	}
@@ -110,6 +120,12 @@ h1, h2, h3, h4, a, p, span, div {
 			fill: var(--hoverable-color);
             transition: fill 0.2s;
 		}
+		@at-root {
+			img#{&} {
+				filter: brightness(1);
+				transition: filter 0.2s;
+			}
+		}
 		img {
 			opacity: var(--hoverable-opacity);
             transition: opacity 0.2s;
@@ -118,6 +134,11 @@ h1, h2, h3, h4, a, p, span, div {
 			color: var(--hovered-color);
 			svg {
 				fill: var(--hovered-color);
+			}
+			@at-root {
+				img#{&} {
+					filter: brightness(0.6);
+				}
 			}
 			img {
 				opacity: var(--hovered-opacity);

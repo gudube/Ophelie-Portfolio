@@ -21,6 +21,8 @@ export class FullImageViewerComponent {
 
 	@Input() public description = '';
 
+	@Input() public title = '';
+
 	public showImage = false;
 
 	public cleanUrl: SafeResourceUrl | null = null;

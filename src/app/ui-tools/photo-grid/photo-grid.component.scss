@@ -12,6 +12,7 @@
 	}
 
 	.grid-cell {
+		max-width: 400px;
 		margin: 20px;
 
 		.square-img-container {
@@ -51,6 +52,7 @@
 
 		.subtitle {
 			color: grey;
+			max-width: 100%;
 		}
 
 		@media (hover: hover) {

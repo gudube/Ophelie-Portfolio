@@ -4,23 +4,26 @@
 <div id="container">
 	<div id="presentation-container">
 		<div class="presentation noselect" id="presentation1" (mouseover)="hoverImage(filters.Peintures)" (mouseout)="unhoverImage()"
-			[ngClass]="{'selected': currentFilter === filters.Peintures}" (click)="changeFilter(filters.Peintures)">
+			[ngClass]="{'selected': currentFilter === filters.Peintures}" routerLink='/arts-visuels/peintures' >
 			<!-- <h3 class="presentation-title">PEINTURES</h3> -->
 			<img src="assets/peintures/p8.jpg"/>
 		</div>
 		<div class="presentation noselect" id="presentation2" (mouseover)="hoverImage(filters.Sculptures)" (mouseout)="unhoverImage()"
-			[ngClass]="{'selected': currentFilter === filters.Sculptures}" (click)="changeFilter(filters.Sculptures)">
+			[ngClass]="{'selected': currentFilter === filters.Sculptures}" routerLink='/arts-visuels/sculptures'>
 			<!-- <h3 class="presentation-title">SCULPTURES</h3> -->
 			<img src="assets/sculptures/s2.jpg"/>
 		</div>
 		<div class="presentation noselect" id="presentation3" (mouseover)="hoverImage(filters.Dessins)" (mouseout)="unhoverImage()"
-			[ngClass]="{'selected': currentFilter === filters.Dessins}" (click)="changeFilter(filters.Dessins)">
+			[ngClass]="{'selected': currentFilter === filters.Dessins}" routerLink='/arts-visuels/dessins'>
 			<!-- <h3 class="presentation-title">DESSINS</h3> -->
 			<img src="assets/dessins/d8.jpg"/>
 		</div>
 	</div>
 	<h4 id="title-selected">{{hoverTitle ? hoverTitle : currentTitle}}</h4>
-	<app-photo-grid [pictures]="peintures" [hidden]="currentFilter != filters.Peintures"></app-photo-grid>
-	<app-photo-grid [pictures]="sculptures" [hidden]="currentFilter != filters.Sculptures"></app-photo-grid>
-	<app-photo-grid [pictures]="dessins" [hidden]="currentFilter != filters.Dessins"></app-photo-grid>
+	<!-- <app-photo-grid [pictures]="peintures" [hidden]="currentFilter != filters.Peintures"></app-photo-grid> -->
+	<!-- <app-photo-grid [pictures]="sculptures" [hidden]="currentFilter != filters.Sculptures"></app-photo-grid> -->
+	<!-- <app-photo-grid [pictures]="dessins" [hidden]="currentFilter != filters.Dessins"></app-photo-grid> -->
+	<!-- <div [hidden]="currentFilter != filters.Sculptures">
+		<img src="assets/sculptures/header.png"/>
+	</div> -->
 </div>

@@ -1,234 +1,268 @@
 {
-	"peintures": [
-		{
-			"fileName": "peintures/p9.jpg",
-			"title": "JE VOUS LAISSE L’EXPLORER",
-			"subtitle": "2021, acrylique sur papier d’aquarelle, 212.5 x 122cm",
-			"description": "description",
-			"subImages": ["peintures/p9.jpg"]
-		},
-		{
-			"fileName": "peintures/p8.jpg", 
-			"title": "ANNIE", 
-			"subtitle": "2021, acrylique sur toile, 30.5 x 30.5cm", 
-			"description": "description", 
-			"subImages": ["peintures/p8.jpg"]
-		},
-		{ 
-			"fileName": "peintures/p7.jpg", 
-			"title": "ESPÉRONS, AVANT QUE TOUT NE FONDE", 
-			"subtitle": "2021, acrylique sur toile, 30.5 x 30.5cm", 
-			"description": "description", 
-			"subImages": ["peintures/p7.jpg"] 
-		},
-		{ 
-			"fileName": "peintures/p6.jpg", 
-			"title": "LA TIRADE DU SCORPION", 
-			"subtitle": "2021, acrylique sur toile, 61 x 45.5cm", 
-			"description": "description", 
-			"subImages": ["peintures/p6.jpg"] 
-		},
-		{ 
-			"fileName": "peintures/p5.jpg", 
-			"title": "NE FERME PAS LES YEUX", 
-			"subtitle": "2020, acrylique sur toile, 51 x 40cm", 
-			"description": "description", 
-			"subImages": ["peintures/p5.jpg"] 
-		},
-		{ 
-			"fileName": "peintures/p4.jpg", 
-			"title": "FRAGMENT D’ODYSSÉE", 
-			"subtitle": "2020, acrylique sur toile, 51 x 40cm", 
-			"description": "description", 
-			"subImages": ["peintures/p4.jpg"] 
-		},
-		{ 
-			"fileName": "peintures/p3.jpg", 
-			"title": "DISPARITION", 
-			"subtitle": "2018, acrylique sur toile, 51 x 40cm", 
-			"description": "description", 
-			"subImages": ["peintures/p3.jpg"] 
-		},
-		{ 
-			"fileName": "peintures/p2.jpg", 
-			"title": "AU-DELÀ DU RÉEL", 
-			"subtitle": "2018, acrylique sur toile, 51 x 40cm", 
-			"description": "description", 
-			"subImages": ["peintures/p2.jpg"] 
-		},
-		{ 
-			"fileName": "peintures/p1.jpg", 
-			"title": "PORTAIT D’UN CIEL, UN JOUR QUI N’EXISTE PAS ENCORE", 
-			"subtitle": "2014, acrylique sur toile, 76 x 61cm", 
-			"description": "description", 
-			"subImages": ["peintures/p1.jpg", "peintures/p8.jpg", "peintures/p9.jpg"] 
-		},
-		{ 
-			"fileName": "peintures/p0.jpg", 
-			"title": "GÉOMÉTRIE DE LA NEUTRALITÉ ILLUSOIRE", 
-			"subtitle": "2014, acrylique sur toile, 25 x 20cm", 
-			"description": "description", 
-			"subImages": ["peintures/p0.jpg"] 
-		}
-	],
-	"dessins": [
-		{ 
-			"fileName": "dessins/d8.jpg", 
-			"title": "POUR NE PLUS LES ENTENDRE", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 15 x 23cm", 
-			"description": "description", 
-			"subImages": ["dessins/d8.jpg"] 
-		},
-		{ 
-			"fileName": "dessins/d7.jpg", 
-			"title": "CES CRIS QUE L\"ON SE REFUSE", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 15 x 23cm", 
-			"description": "description", 
-			"subImages": ["dessins/d7.jpg"] 
-		},
-		{ 
-			"fileName": "dessins/d6.jpg", 
-			"title": "EN MORCEAUX", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm", 
-			"description": "description", 
-			"subImages": ["dessins/d6.jpg"] 
-		},
-		{ 
-			"fileName": "dessins/d5.jpg", 
-			"title": "DES TOURNESOLS PARTICULIERS", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm", 
-			"description": "description", 
-			"subImages": ["dessins/d5.jpg"] 
-		},
-		{ 
-			"fileName": "dessins/d4.jpg", 
-			"title": "COEUR LIQUIDE", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm", 
-			"description": "description", 
-			"subImages": ["dessins/d4.jpg"] 
-		},
-		{ 
-			"fileName": "dessins/d3.jpg", 
-			"title": "QUAND LES PLEURS SONT ACIDES", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm", 
-			"description": "description", 
-			"subImages": ["dessins/d3.jpg"] 
-		},
-		{ 
-			"fileName": "dessins/d2.jpg", 
-			"title": "REALITÉ ALTERNATIVE", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 10.5cm", 
-			"description": "description", 
-			"subImages": ["dessins/d2.jpg"] 
-		},
-		{ 
-			"fileName": "dessins/d1.jpg", 
-			"title": "CHHHUT", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 11 x 14cm", 
-			"description": "description", 
-			"subImages": ["dessins/d1.jpg"] 
-		},
-		{ 
-			"fileName": "dessins/d0.jpg", 
-			"title": "CROQUIS", 
-			"subtitle": "2021, crayon à mine sur papier à dessin, 21.5 x 28cm", 
-			"description": "description",
-			"subImages": ["dessins/d0.jpg"] 
-		}
-	],
-	"sculptures": [
-		{ 
-			"fileName": "sculptures/s1.jpg", 
-			"title": "titre 8", 
-			"subtitle": "sous-titre 8", 
-			"description": "description", 
-			"subImages": ["sculptures/s1.jpg"] 
-		},
-		{ 
-			"fileName": "sculptures/s2.jpg", 
-			"title": "titre 8", 
-			"subtitle": "sous-titre 8", 
-			"description": "description", 
-			"subImages": ["sculptures/s2.jpg"] 
-		},
-		{ 
-			"fileName": "sculptures/s3.jpg", 
-			"title": "titre 8", 
-			"subtitle": "sous-titre 8", 
-			"description": "description", 
-			"subImages": ["sculptures/s3.jpg"] 
-		},
-		{ 
-			"fileName": "sculptures/s4.jpg", 
-			"title": "titre 8", 
-			"subtitle": "sous-titre 8", 
-			"description": "description", 
-			"subImages": ["sculptures/s4.jpg"] 
-		}
-	],
-	"danses": [
-		{
-			"fileName": "projets/etoiles",
-			"title": "TENTER DE VOIR A NOUVEAU LES ETOILES",
-			"subtitle": "",
-			"description": "",
-			"videoUrl": "https://www.youtube.com/embed/tgbNymZ7vqY"
-		},
-		{
-			"fileName": "projets/peut_etre", 
-			"title": "J'HABITE QUELQUE PART DANS UN PULL", 
-			"subtitle": "", 
-			"description": "",
-			"videoUrl": ""
-		},
-		{
-			"fileName": "projets/chambre", 
-			"title": "JUSTE UNE IMPRO UN JOUR ORDINAIRE", 
-			"subtitle": "", 
-			"description": "",
-			"videoUrl": ""
-		},
-		{ 
-			"fileName": "projets/cornes", 
-			"title": "PROFITES DE L'ETRANGETE DU CALME POUR RESPIRER", 
-			"subtitle": "", 
-			"description": "",
-			"videoUrl": ""
-		},
-		{ 
-			"fileName": "projets/fuir", 
-			"title": "LORSQUE L'ON VEUT FUIR..", 
-			"subtitle": "",
-			"description": "",
-			"videoUrl": ""
-		},
-		{ 
-			"fileName": "projets/peu_importe", 
-			"title": "PEU IMPORTE", 
-			"subtitle": "", 
-			"description": "",
-			"videoUrl": ""
-		},
-		{ 
-			"fileName": "projets/murs_fondent", 
-			"title": "LES MURS FONDENT ENTRE MES DOIGTS LORSQUE JE FERME LES YEUX", 
-			"subtitle": "", 
-			"description": "",
-			"videoUrl": ""
-		},
-		{ 
-			"fileName": "projets/sans_titre_6", 
-			"title": "SANS TITRE #6", 
-			"subtitle": "", 
-			"description": "",
-			"videoUrl": ""
-		},
-		{ 
-			"fileName": "projets/sans_titre_4", 
-			"title": "SANS TITRE #4", 
-			"subtitle": "", 
-			"description": "",
-			"videoUrl": ""
-		}
-	]
+	"peintures": {
+		"title": "PEINTURES",
+		"collections": [
+			{
+				"headerUrl": "assets/peintures/main-header.png",
+				"url": "ciels",
+				"title": "DES CIELS QUI S'OBSERVENT EN SILENCE",
+				"description": "UNE COLLECTION DE CIELS INTÉRIEURS, AUTONOMES, TÉMOINS ET PARTENAIRES DE LA COMPLEXITÉ DE NOS MONDES SECRETS",
+				"text": "J’entends, je frémis sous le ciel qui m’habite, ce ciel qui abritent également d’autres créatures que je rencontre aussi souvent que les humains ou les écureuils un jour ensoleillé. Ces jours où les gens se répètent entre eux « comme il fait beau aujourd’hui » et qu’il est couramment répandu de répondre « oui ». Pourtant, quand le ciel est gris, c’est là qu’il me fait sentir le plus chez moi, il crée mon toit de ses nuages épais et enveloppants, il n’abîme pas mes yeux déjà habitués à la noirceur, la pluie me donne en quelque sorte la permission d’être triste tout en m’aidant à dissimuler mes larmes, un peu comme cet ami que je n’ai pas rencontré, la fraicheur qui en résulte a une odeur légère et libre qui me permet de respirer un moment, le froid de ce ciel m’accorde le droit de porter sur moi un pull réconfortant sans avoir l’impression de côtoyer le soleil, ce ciel dans son intensité chaotique résonne avec la mienne et, pour une fois, je me sens un peu plus en accord avec ce qui m’entoure, alors je sors pour me rapprocher de son état indomptable, pour qu’il me dévore, me salisse, me bouscule, pour qu’il fasse de moi sa toile… et j’entends mes cris, ces cris interdis, je les entends dans les orages qui déchirent la réalité à ma place, qui ose exister pleinement, sauvage et fier, qui inspirent à la fois la peur, la puissance, la beauté et la fascination… Ces ciels que lorsqu’on prend réellement le temps de regarder rendent soi-même, les maisons, ce qui fait partie du quotidien si dérisoires et si petits, et rendent l’humanité, la planète, l’univers si grand et absolu qu’il étourdie quiconque ose se perdre dans son infini. Ce lieu à la fois inaccessible et si proche de nous. Ce lieu qui agit à la fois comme puissance autonome, témoin et complice. Ce lieu où les pluralités et les oppositions coexistent, malgré les affrontements continus de leurs contradictions, de façon étonnamment mélodieuse. Et notre ciel intérieur porte en plus en lui le désordre de nos tensions intérieures qui orchestrent notre vie. C’est d’ailleurs ce qui fait la poésie de tous ces ciels. Ces entités en permanent mouvement. Ainsi, le ciel, et tous ses astres, ont longtemps servis aux humains à se repérer dans le temps, s’orienter dans l’espace, fragmenter leur existence errante.\\nMalheureusement le ciel n’est souvent qu’un élément sans plus de signification que celui de décor à un acteur plus « concret » qui attire davantage les regards par son aspect précis, plus facilement reconnaissable. Dans cette petite collection, sont mis de l’avant les ciels dans leur autonomie, tant celle de leur caractère que de leur portée émotive et intime. Cette collection où se fréquentent des éléments abstraits et figuratifs, mais le plus souvent entre les deux, laisse entrevoir une fenêtre sur les atmosphères profondes et si particulières de nos ciels intérieurs, sur ces univers au-delà des sens, ceux-ci qui ne pourront jamais voir le jour dans la réalité, mais qui existent bien pourtant, étant à la fois paysage du présent et mémoire, ombres et formes qui passent et laissent ici une trace qui autrement se serait perdu, à la fois résultat visuel et réflexions intérieures. La création de ces peintures est elle-même empreint de contraires, comme une lutte sur la toile entre l’intuition et la conscience, autant des gestes, des couleurs, des textures, des couches qui se superposent, s’effacent pour s’animer, des espaces, des lumières, des détails, entre le drame et le rêve, l’esthétique et le sensible, la force de l’énergie créatrice et la subtilité dans l’épuisement, l’ambiguïté.\\nChaque tableau, sous les yeux d’un autre humain, porte, l’instant de cette rencontre, la scène de l’existence puissante de celui qui la regarde, comme décor et partenaire de sa propre vie à ce moment précis et, dans une heure, un jour ou un an, ce tableau lui apparaîtra autrement, tout en lui restant fidèle.  Je vous laisse observer tous ces ciels; en silence; pour qu’ils puissent résonner avec les vôtres, pour qu’ensemble se forme ces mystérieux et uniques scénarios visuels.",
+				"photos": [
+					{
+						"fileName": "peintures/p9.jpg",
+						"title": "JE VOUS LAISSE L’EXPLORER",
+						"subtitle": "2021, acrylique sur papier d’aquarelle, 212.5 x 122cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p9.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p8.jpg",
+						"title": "ANNIE",
+						"subtitle": "2021, acrylique sur toile, 30.5 x 30.5cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p8.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p7.jpg",
+						"title": "ESPÉRONS, AVANT QUE TOUT NE FONDE",
+						"subtitle": "2021, acrylique sur toile, 30.5 x 30.5cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p7.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p6.jpg",
+						"title": "LA TIRADE DU SCORPION",
+						"subtitle": "2021, acrylique sur toile, 61 x 45.5cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p6.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p5.jpg",
+						"title": "NE FERME PAS LES YEUX",
+						"subtitle": "2020, acrylique sur toile, 51 x 40cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p5.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p4.jpg",
+						"title": "FRAGMENT D’ODYSSÉE",
+						"subtitle": "2020, acrylique sur toile, 51 x 40cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p4.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p3.jpg",
+						"title": "DISPARITION",
+						"subtitle": "2018, acrylique sur toile, 51 x 40cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p3.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p2.jpg",
+						"title": "AU-DELÀ DU RÉEL",
+						"subtitle": "2018, acrylique sur toile, 51 x 40cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p2.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p1.jpg",
+						"title": "PORTAIT D’UN CIEL, UN JOUR QUI N’EXISTE PAS ENCORE",
+						"subtitle": "2014, acrylique sur toile, 76 x 61cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p1.jpg",
+							"peintures/p8.jpg",
+							"peintures/p9.jpg"
+						]
+					},
+					{
+						"fileName": "peintures/p0.jpg",
+						"title": "GÉOMÉTRIE DE LA NEUTRALITÉ ILLUSOIRE",
+						"subtitle": "2014, acrylique sur toile, 25 x 20cm",
+						"description": "description",
+						"subImages": [
+							"peintures/p0.jpg"
+						]
+					}
+				]
+			}
+		]
+	},
+	"dessins": {
+		"title": "DESSINS",
+		"collections": [
+			{
+				"headerUrl": "assets/dessins/main-header.png",
+				"url": "portraits",
+				"title": "LES PORTRAITS INVISIBLES",
+				"description": "UNE COLLECTION DE PORTRAITS DU POINT DE VUE DE CELUI QUI L’HABITE, AFIN DE SE VOIR RÉÈLEMENT…",
+				"text": "Si les humains possédaient des yeux qui pouvaient voir la façon dont les êtres sont réellement, on ne verrai pas uniquement des visages lisses composés de deux yeux, d’un nez et d’une bouche avec des proportions que l’on pourrait qualifiées à tort de « normales »… et cette collection n’aurait pas lieu d’être, ou plutôt, serait simplement des portraits fidèles de visages de gens que l’on croiserait tous les jours dans la rue et aurait la même fonction que les peintures d’individus produites avant l’apparition de la photographie ; bien qu’en fait, cette collection représente effectivement, avec même bien plus de fidélité que celle de nos yeux ou que la lentille du meilleur appareil photo, les visages de gens que l’on croise tous les jours dans la rue, sans le savoir.\\nGrâce au dessin, ces portraits assemblent notre apparence et nos « états » intérieurs, comme des sensations visibles et, si j’ose l’avouer, des sensations tangibles pour qui l’habite, et nous permettent de voir la vérité, de nous montrer, pour une fois, réellement tel que l’on se voit, de donner accès à notre réel visage, celui que nos propres yeux perçoivent, contrairement au peu que montrent nos traits extérieurs auxquels nous sommes trop habitués à nous fiers lorsqu’on regarde une personne.\\nEntourés de visages que l’on ne voit qu’à moitié, ce recueil de dessins donne à voir des portraits entiers, donc celui que l’on regarde avec nos yeux externes, cette déformation du cerveau qui nous permet de distinguer approximativement les formes et les couleurs, et nos yeux internes, qui même sans être dans aucun livre d’anatomie existent portant, ces yeux internes qui nous font voir réellement comme nous sommes, avec ses cris dénudés de dents, son cœur liquide que l’on essaye de retenir, ses créatures qui s’approprient notre gorge et nous étouffent, jusqu’à ce que plus un son n’arrive à sortir de notre bouche, alors, pour « sauver les apparences » comme on dit, on sourit et ainsi les humains pensent que l’on est un quelqu’un de gêné, simplement parce que leurs yeux ne peuvent percevoir notre vérité ; et lorsqu’on arrache enfin sa voix et qu’on se risque à décrire un fragment de soi, ce qu’on dit passe pour des métaphores ou de la poésie, probablement parce que l'on est trop habitué à voir ce demi-visage qui nous parle au point de le prendre pour un visage entier et vrai, même si pourtant on porte tous sur soi un visage fragmenté (c’est absurde je sais, mais c’est ainsi, c’est humain, et un humain incarne les contradictions du monde, c’est ainsi, on croit ce que l’on voit, bien qu’il a été prouvé depuis bien longtemps déjà que la vue n’est pas du tout un sens fiable, c’est comme le mythe de la caverne, on croit profondément que les gens que l’on voit sont des ombres, ces images sans textures en deux dimension, alors que l’on sait tout aussi profondément que l’on est tous de la même espèce animale et qu’on se sait également être un individu de textures en trois dimensions. Un jour peut-être j’arriverai à comprendre les humains, peut-être les humains pourront se comprendre eux-mêmes, ou peut-être que c’est justement ça qui les rends si fascinants (en tout cas du point de vue d’un humain, pour les autres espèces vivantes je ne peux pas le savoir)), ou, si vous êtes moins chanceux, ce que vous direz passera pour des hallucinations (car malheureusement les hallucinations sont moins bien perçues que les métaphores... (alors j’ajoute juste une deuxième parenthèse pour remercier celui qui a inventé le concept des métaphores comme « figure de style », le rendant acceptable dans le langage et donc dans la société, merci)).\\nBref, je vous laisse vous retrouver parmi ses quelques portraits et découvrir les autres visages.",
+				"photos": [
+					{
+						"fileName": "dessins/d8.jpg",
+						"title": "POUR NE PLUS LES ENTENDRE",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 15 x 23cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d8.jpg"
+						]
+					},
+					{
+						"fileName": "dessins/d7.jpg",
+						"title": "CES CRIS QUE L\"ON SE REFUSE",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 15 x 23cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d7.jpg"
+						]
+					},
+					{
+						"fileName": "dessins/d6.jpg",
+						"title": "EN MORCEAUX",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d6.jpg"
+						]
+					},
+					{
+						"fileName": "dessins/d5.jpg",
+						"title": "DES TOURNESOLS PARTICULIERS",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d5.jpg"
+						]
+					},
+					{
+						"fileName": "dessins/d4.jpg",
+						"title": "COEUR LIQUIDE",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d4.jpg"
+						]
+					},
+					{
+						"fileName": "dessins/d3.jpg",
+						"title": "QUAND LES PLEURS SONT ACIDES",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 21cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d3.jpg"
+						]
+					},
+					{
+						"fileName": "dessins/d2.jpg",
+						"title": "REALITÉ ALTERNATIVE",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 14 x 10.5cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d2.jpg"
+						]
+					},
+					{
+						"fileName": "dessins/d1.jpg",
+						"title": "CHHHUT",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 11 x 14cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d1.jpg"
+						]
+					},
+					{
+						"fileName": "dessins/d0.jpg",
+						"title": "CROQUIS",
+						"subtitle": "2021, crayon à mine sur papier à dessin, 21.5 x 28cm",
+						"description": "description",
+						"subImages": [
+							"dessins/d0.jpg"
+						]
+					}
+				]
+			}
+		]
+	},
+	"sculptures": {
+		"title": "SCULPTURES",
+		"collections": [
+			{
+				"headerUrl": "assets/sculptures/main-header.png",
+				"url": "creatures",
+				"title": "CES CRÉATURES ABANDONNÉES",
+				"description": "UNE COLLECTION DE PETITS MONSTRES ERRANTS SEULS SUR NOTRE PLANÈTE SI GRANDE ET EFFRAYANTE",
+				"text": "Leur monde est fait d’abandon, de craintes, et de mélancolie.\\nLes monstres sont des êtres d’une profonde solitude, des créatures secrètes ; incapables de s’exprimer par la parole, mais comblant leur silence extérieur par leur cacophonie intérieure qui s’exprime à travers leur yeux…\\nIls ne ressemblent à aucun autre humain, animal ou créature connue par l’Homme, et c’est pourquoi ils ont tendance à inspirer le mépris, le dégout et la peur et sont constamment rejetés ; pour leur différence, ces différences que nous portons tous, bien qu’en apparence, ce soit moins flagrant, puisque, contrairement à eux, on s’est contraint à intégrer les normes de la société, celles qui décident la manière dont un individu « normal, sain et inoffensif » devrait paraitre, se comporter, entrer en relation, etc.. En les abandonnant, les humains ont rendu les monstres inadaptés à la vie parmi l’humanité. Alors, ils ont dû s’adapter par eux-mêmes, en réagissant à la maltraitance, aux regards méprisants et au comportement de rejet du mieux qu’ils pouvaient, en se faisant tout petit ou en manifestant physiquement leur douleur, exactement de la même façon que les êtres humains le font dans de pareilles situations. Et pourtant, tout comme les humains, ils ne souhaitent qu’être aimé et sont simplement des êtres gentils qui ont vécus, malgré eux, des traumatismes qui continuent de les suivre peu importe où ils vont, de les hanter, de les empoisonner. Humains et monstres, on partage les mêmes angoisses, les mêmes cicatrices, les mêmes douleurs… mais aussi les mêmes désirs d’émancipation, d’audace, les mêmes espoirs, aussi faibles soient-ils, car quand, comme eux, l’humanité nous a rejeté, on finit par se comprendre, se sentir proche l’un de l’autre et des liens se tissent à force de les côtoyer jusqu’à ce que les monstres deviennent notre vraie famille. Contrairement aux gens, les monstres ne mentent pas. Et leur isolement imposé leur donne une sorte de liberté macabre, mais également fascinante pour les humains emprisonnés par les exigences et la pression qu’ils s’infligent en étant persuadés que leur survie en dépend. Nous avons autant besoin d’eux, qu’eux ont besoin de nous, pour, l’un comme l’autre, éviter de se retrouver seul, livré à soi-même face à notre imagination d’une terreur insupportable et envahissante.\\nCombien de fois nous sommes nous enfermés dans un placard, rejoindre les monstres qui s’y réfugient, pour se sentir nous aussi un peu plus à l’abri, pour trouver le sommeil ou pour se permettre de se sentir un peu chez soi. Fuir un moment le réel, apprivoiser notre monde intérieur, ce monde imaginaire dont on a besoin pour se développer, même devenu adulte.\\nQuand on est enfant, on nous dit que les monstres n’existent pas, probablement pour nous éviter d’avoir peur, alors que l’idée de leur absence nous plonge, en réalité, dans un état de solitude bien plus terrifiant encore. Leur « irréalité » nous obligeant à questionner alors la légitimité de notre propre existence, et nous nous retrouvons abandonnés à ces humains à la méchanceté déroutante, arborant pourtant des visages angéliques, ces visages qui nous inspirent la peur de peu qu’on les ait côtoyés.\\nMaintenant que je suis adulte, je me rends compte que les adultes simplifient la réalité en rejetant tous les monstres pour rassurer les enfants, alors que c’est eux qui ont peur de savoir la réalité bien plus complexe que ça. Si on acceptait que les monstres existent, et que ce n’est pas une réalité qui devrait nous faire peur, et si on arrêtait de les chasser injustement, si nous prenions simplement temps pour les comprendre, pour s’apprivoiser l’un et l’autre, nous nous retrouverons face à l’évidence que nous sommes bien plus proche d’eux que de certains humains curieusement mieux acceptés dans ce monde, nous souffriront aussi peut-être moins de nos propres différences, et la solitude ainsi que le gouffre qui l’accompagne pourront prendre un sens nouveau plus facile à supporter pour les humains ainsi que pour les monstres…",
+				"photos": [
+					{
+						"fileName": "sculptures/lapin1.jpg",
+						"title": "VICTOR",
+						"subtitle": "Ophélie Dubois, Victor, 2021, argile naturelle peinte à l’acrylique et vernie mat, 354 g, 11 x 11 x 18 cm.",
+						"description": "Victor est un monstre de la famille des Bulbopodes. Il porte une peau d’étrange lapin et passe la majorité de ses journées à écouter le sifflement du vent à travers une fenêtre à peine ouverte. Ophélie Dubois, Victor, 2021, argile naturelle peinte à l’acrylique et vernie mat, 354 g, 11 x 11 x 18 cm.",
+						"subImages": [
+							"sculptures/lapin1.jpg",
+							"sculptures/lapin2.jpg",
+							"sculptures/lapin3.jpg",
+							"sculptures/lapin4.jpg",
+							"sculptures/lapin5.jpg",
+							"sculptures/lapin6.jpg"
+						]
+					},
+					{
+						"fileName": "sculptures/s1.jpg",
+						"title": "titre 8",
+						"subtitle": "sous-titre 8",
+						"description": "description",
+						"subImages": [
+							"sculptures/s1.jpg",
+							"https://www.youtube.com/embed/tgbNymZ7vqY"
+						]
+					},
+					{
+						"fileName": "sculptures/s2.jpg",
+						"title": "titre 8",
+						"subtitle": "sous-titre 8",
+						"description": "description",
+						"subImages": [
+							"sculptures/s2.jpg"
+						]
+					},
+					{
+						"fileName": "sculptures/s3.jpg",
+						"title": "titre 8",
+						"subtitle": "sous-titre 8",
+						"description": "description",
+						"subImages": [
+							"sculptures/s3.jpg"
+						]
+					},
+					{
+						"fileName": "sculptures/s4.jpg",
+						"title": "titre 8",
+						"subtitle": "sous-titre 8",
+						"description": "description",
+						"subImages": [
+							"sculptures/s4.jpg"
+						]
+					}
+				]
+			}
+		]
+	}
 }

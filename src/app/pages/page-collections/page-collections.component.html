@@ -1,0 +1,8 @@
+<app-background-title title="{{category?.title}}"></app-background-title>
+<h1 id="title">COLLECTIONS</h1>
+<div id="headers" class="appear">
+	<div *ngFor="let collection of category?.collections">
+		<img class="hoverable" src="{{collection.headerUrl}}" routerLink="/arts-visuels/{{this.route}}/{{collection.url}}"/>
+	</div>
+	<img src="assets/arts-visuels/avenir.png"/>
+</div>
