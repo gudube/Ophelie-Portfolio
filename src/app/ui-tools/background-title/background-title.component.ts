@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-background-title',
-  templateUrl: './background-title.component.html',
-  styleUrls: ['./background-title.component.scss']
+	selector: 'app-background-title',
+	templateUrl: './background-title.component.html',
+	styleUrls: ['./background-title.component.scss'],
 })
 export class BackgroundTitleComponent implements OnInit {
+	@Input() public title = ''
 
-  constructor() { }
+	@Input() public smaller = false
 
-  ngOnInit(): void {
-  }
+	constructor() { }
 
+	ngOnInit(): void {
+	}
 }
