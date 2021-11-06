@@ -26,10 +26,10 @@
 	</div>
 	<app-image-viewer id="image-viewer" [items]="items"></app-image-viewer>
 	<div id="description-separator"></div>
-	<!-- <div>
-		<h3>{{this.title}}</h3>
+	<div id="description-container">
+		<h3 id="title">{{this.title}}</h3>
 		<p id="description">{{this.description}}</p>
-	</div> -->
+	</div>
 	<div class="arrowContainer hoverable rightArrow" *ngIf="hasNextImage"  (click)="changeImage(true)">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		viewBox="0 0 269.97 837.34" style="enable-background:new 0 0 269.97 837.34;" xml:space="preserve">
