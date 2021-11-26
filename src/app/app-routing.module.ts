@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { MetaDefinition } from '@angular/platform-browser';
 import { RouterModule, Route } from '@angular/router';
 import { environment } from 'src/environments/environment';
-import * as arts from 'src/assets/arts.json';
+import arts from 'src/assets/arts.json';
 import { PageAboutComponent } from './pages/page-about/page-about.component';
 import { PageAcceuilComponent } from './pages/page-acceuil/page-acceuil.component';
 import { PageBiographieComponent } from './pages/page-biographie/page-biographie.component';
