@@ -44,7 +44,6 @@ export class ImageViewerComponent implements OnInit {
 		this._shownItemNum = 0;
 		this._items = newItems;
 		this.shownIsImage = this.isImage(newItems[0]);
-		console.log(this.items[this.shownItemNum]);
 	}
 
 	private _shownItemNum = 0;

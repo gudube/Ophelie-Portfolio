@@ -49,6 +49,7 @@ import { ImageViewerComponent, SafePipe } from './image-viewer/image-viewer.comp
 		MenuCirclesComponent,
 		SocialLogosComponent,
 		BackgroundTitleComponent,
+		ImageViewerComponent,
 	],
 })
 export class UiToolsModule { }

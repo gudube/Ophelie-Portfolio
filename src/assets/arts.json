@@ -225,13 +225,12 @@
 						]
 					},
 					{
-						"fileName": "sculptures/s1.jpg",
-						"title": "titre 8",
-						"subtitle": "sous-titre 8",
+						"fileName": "sculptures/escargot1.jpg",
+						"title": "LOUIS",
+						"subtitle": "Ophélie Dubois, Louis, 2021, argile naturelle peinte à l’acrylique et vernie mat, 368 g, 6 x 8 x 9,5 cm.",
 						"description": "description",
 						"subImages": [
-							"sculptures/s1.jpg",
-							"https://www.youtube.com/embed/tgbNymZ7vqY"
+							"sculptures/escargot1.jpg"
 						]
 					},
 					{

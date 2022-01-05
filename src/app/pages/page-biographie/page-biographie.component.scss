@@ -24,3 +24,16 @@
 	}
 }
 
+#image-viewer-container {
+	height: 500px;
+	width: 100%;
+
+	#image-viewer {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.texte-description {
+	padding: 90px 0 20px 0;
+}
