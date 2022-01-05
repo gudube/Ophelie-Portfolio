@@ -12,7 +12,7 @@
 	</div>
 	<div id="imgContainer" *ngIf="this.shownIsImage">
 		<img #fullImg src="/assets/{{items[shownItemNum]}}" alt="Full Size Image" (load)="finishedLoadingAsset()">
-		<div id="posIndicators" *ngIf="items.length > 1">
+		<div #posIndicators id="posIndicators" [style.visibility]="(items.length > 1 && itemLoaded) ? 'visible': 'hidden'">
 			<div class="posIndicator" *ngFor="let item of items; let i = index" [ngClass]="{'selected': shownItemNum == i}"></div>
 		</div>
 	</div>

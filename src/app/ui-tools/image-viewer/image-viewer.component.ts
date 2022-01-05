@@ -30,6 +30,9 @@ export class ImageViewerComponent implements OnInit {
 	@ViewChild('fullImg')
 	private fullImg: ElementRef<HTMLImageElement> | null = null;
 
+	@ViewChild('posIndicators')
+	private posIndicators: ElementRef<HTMLDivElement> | null = null;
+
 	@ViewChild('mainContainer')
 	private mainContainer: ElementRef<HTMLDivElement> | null = null;
 
@@ -80,15 +83,23 @@ export class ImageViewerComponent implements OnInit {
 
 	@HostListener('window:resize')
 	public resetArrowsPositions(): void {
-		const offset = (this.shownIsImage && this.mainContainer && this.fullImg)
+		const horizontalOffset = (this.shownIsImage && this.mainContainer && this.fullImg)
 			? (this.mainContainer.nativeElement.clientWidth
 				- this.fullImg.nativeElement.clientWidth) / 2 + 10
 			: 20;
 		if (this.previousSubArrow) {
-			this.renderer.setStyle(this.previousSubArrow.nativeElement, 'left', offset);
+			this.renderer.setStyle(this.previousSubArrow.nativeElement, 'left', horizontalOffset);
 		}
 		if (this.nextSubArrow) {
-			this.renderer.setStyle(this.nextSubArrow.nativeElement, 'right', offset);
+			this.renderer.setStyle(this.nextSubArrow.nativeElement, 'right', horizontalOffset);
+		}
+
+		const verticalOffset = (this.shownIsImage && this.mainContainer && this.fullImg)
+			? (this.mainContainer.nativeElement.clientHeight
+				- this.fullImg.nativeElement.clientHeight) / 2
+			: 20;
+		if (this.posIndicators) {
+			this.renderer.setStyle(this.posIndicators.nativeElement, 'bottom', verticalOffset);
 		}
 	}
 }

@@ -1,6 +1,7 @@
 #mainContainer {
 	height: 100%;
-	width: 100%;
+	width: fit-content;
+	max-width: 100%;
 	padding: 25px 50px;
 	box-sizing: border-box;
 	display: flex;
@@ -8,6 +9,7 @@
 	flex-wrap: nowrap;
 	justify-content: center;
 	position: relative;
+	margin: auto;
 	
 	@media only screen and (max-width: 800px) {
 		padding-right: 20px;
@@ -24,15 +26,20 @@ mat-spinner {
 }
 
 #imgContainer {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
-	max-height: 100%;
+	align-items: center;
 	position: relative;
-	// z-index: 30;
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
 	
 	img {
-		max-width: 100%;
 		border: 2px solid white;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
 	}
 }
 
