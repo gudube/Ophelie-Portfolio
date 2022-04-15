@@ -36,6 +36,9 @@ export class ImageViewerComponent implements OnInit {
 	@ViewChild('mainContainer')
 	private mainContainer: ElementRef<HTMLDivElement> | null = null;
 
+	@Input()
+	public bigBorder = false;
+
 	private _items: string[] = [];
 
 	public get items(): string[] {
@@ -86,6 +89,7 @@ export class ImageViewerComponent implements OnInit {
 		const horizontalOffset = (this.shownIsImage && this.mainContainer && this.fullImg)
 			? (this.mainContainer.nativeElement.clientWidth
 				- this.fullImg.nativeElement.clientWidth) / 2 + 10
+				+ (this.bigBorder ? -50 : 0)
 			: 20;
 		if (this.previousSubArrow) {
 			this.renderer.setStyle(this.previousSubArrow.nativeElement, 'left', horizontalOffset);
@@ -97,6 +101,7 @@ export class ImageViewerComponent implements OnInit {
 		const verticalOffset = (this.shownIsImage && this.mainContainer && this.fullImg)
 			? (this.mainContainer.nativeElement.clientHeight
 				- this.fullImg.nativeElement.clientHeight) / 2
+				+ (this.bigBorder ? -57.5 : 0)
 			: 20;
 		if (this.posIndicators) {
 			this.renderer.setStyle(this.posIndicators.nativeElement, 'bottom', verticalOffset);
