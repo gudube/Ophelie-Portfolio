@@ -6,17 +6,26 @@
 		<div class="presentation noselect" id="presentation1" (mouseover)="hoverImage(filters.Peintures)" (mouseout)="unhoverImage()"
 			[ngClass]="{'selected': currentFilter === filters.Peintures}" routerLink='/arts-visuels/peintures' >
 			<!-- <h3 class="presentation-title">PEINTURES</h3> -->
-			<img src="assets/peintures/p8.jpg"/>
+			<div class="cadre-container">
+				<img src="assets/peintures/p8.jpg"/>
+				<img src="assets/arts-visuels/cadre.png" class="cadre"/>
+			</div>
 		</div>
 		<div class="presentation noselect" id="presentation2" (mouseover)="hoverImage(filters.Sculptures)" (mouseout)="unhoverImage()"
 			[ngClass]="{'selected': currentFilter === filters.Sculptures}" routerLink='/arts-visuels/sculptures'>
 			<!-- <h3 class="presentation-title">SCULPTURES</h3> -->
-			<img src="assets/sculptures/abeille1.jpg"/>
+			<div class="cadre-container">
+				<img src="assets/sculptures/abeille1.jpg"/>
+				<img src="assets/arts-visuels/cadre.png" class="cadre"/>
+			</div>
 		</div>
 		<div class="presentation noselect" id="presentation3" (mouseover)="hoverImage(filters.Dessins)" (mouseout)="unhoverImage()"
 			[ngClass]="{'selected': currentFilter === filters.Dessins}" routerLink='/arts-visuels/dessins'>
 			<!-- <h3 class="presentation-title">DESSINS</h3> -->
-			<img src="assets/dessins/d8.jpg"/>
+			<div class="cadre-container">
+				<img src="assets/dessins/d8.jpg"/>
+				<img src="assets/arts-visuels/cadre.png" class="cadre"/>
+			</div>
 		</div>
 	</div>
 	<h4 id="title-selected">{{hoverTitle ? hoverTitle : currentTitle}}</h4>
