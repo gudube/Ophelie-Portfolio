@@ -1,8 +1,8 @@
 <div #mainContainer id="mainContainer" class="noselect">
 	<mat-spinner *ngIf="!itemLoaded"></mat-spinner>
-	<mat-icon #previousIcon id="previous-icon" aria-hidden="false" aria-label="Previous sub-image" 
+	<mat-icon #previousIcon id="previous-icon" aria-hidden="false" aria-label="Previous sub-image" [ngClass]="{'lighter': eyeBorder}"
 		[style.visibility]="(shownItemNum > 0 && itemLoaded) ? 'visible' : 'hidden'" (click)="changeImage(false)">navigate_before</mat-icon>
-	<mat-icon #nextIcon id="next-icon" aria-hidden="false" aria-label="Next sub-image" 
+	<mat-icon #nextIcon id="next-icon" aria-hidden="false" aria-label="Next sub-image" [ngClass]="{'lighter': eyeBorder}"
 		[style.visibility]="(shownItemNum + 1 < items.length && itemLoaded) ? 'visible' : 'hidden'" (click)="changeImage(true)">navigate_next</mat-icon>
 	<div id="videoContainer" *ngIf="!this.shownIsImage" >
 		<iframe id="videoFrame" [src]="items[shownItemNum] | safe" (load)="finishedLoadingAsset()"></iframe>
@@ -11,8 +11,9 @@
 		</div>	
 	</div>
 	<div id="imgContainer" *ngIf="this.shownIsImage">
-		<img #fullImg src="/assets/{{items[shownItemNum]}}" alt="Full Size Image" (load)="finishedLoadingAsset()" [ngClass]="{'bigBorder': bigBorder}">
-		<div #posIndicators id="posIndicators" [style.visibility]="(items.length > 1 && itemLoaded) ? 'visible': 'hidden'">
+		<img id="overlayImg" src="/assets/about/biographie/cadre.png" *ngIf="eyeBorder">
+		<img #fullImg id="fullImg" src="/assets/{{items[shownItemNum]}}" alt="Full Size Image" (load)="finishedLoadingAsset()" [ngClass]="{'bigBorder': bigBorder, 'eyeBorder': eyeBorder}">
+		<div #posIndicators id="posIndicators" [style.visibility]="(items.length > 1 && itemLoaded && !eyeBorder) ? 'visible': 'hidden'">
 			<div class="posIndicator" *ngFor="let item of items; let i = index" [ngClass]="{'selected': shownItemNum == i}"></div>
 		</div>
 	</div>

@@ -11,5 +11,5 @@ export class PageBiographieComponent implements OnInit {
 	ngOnInit(): void {
 	}
 
-	public items: string[] = ['/about/biographie/_DSC1704.jpg', '/about/biographie/_DSC1725.jpg', '/about/biographie/392472_10151113909179745_1157636471_n.jpg'];
+	public items: string[] = ['/about/biographie/1.png', '/about/biographie/2.png', '/about/biographie/3.png'];
 }

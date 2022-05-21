@@ -35,7 +35,7 @@ mat-spinner {
 	max-width: 100%;
 	min-width: 0;
 	
-	img {
+	#fullImg {
 		border: 2px solid white;
 		max-width: 100%;
 		max-height: 100%;
@@ -43,6 +43,16 @@ mat-spinner {
 		&.bigBorder {
 			border: 50px solid white;
 		}
+		&.eyeBorder {
+			border: none;
+		}
+	}
+
+	#overlayImg {
+		position: absolute;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
 	}
 }
 
@@ -74,6 +84,10 @@ mat-icon {
 	width: 30px;
 	cursor: pointer;
 	z-index: 20;
+
+	&.lighter {
+		background-color: rgba(50, 50, 50, 0.5);
+	}
 
 	&#previous-icon {
 		left: 10px;
