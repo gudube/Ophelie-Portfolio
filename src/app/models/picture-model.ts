@@ -19,3 +19,10 @@ export interface Category {
 	title: string;
 	collections: Collection[];
 }
+
+export interface CarouselItem {
+	title: string;
+	image: string;
+	cadre: string;
+	url: string;
+}

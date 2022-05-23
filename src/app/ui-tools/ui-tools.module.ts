@@ -15,6 +15,7 @@ import { MenuCirclesComponent } from './menu-circles/menu-circles.component';
 import { SocialLogosComponent } from './social-logos/social-logos.component';
 import { BackgroundTitleComponent } from './background-title/background-title.component';
 import { ImageViewerComponent, SafePipe } from './image-viewer/image-viewer.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
 	declarations: [
@@ -31,6 +32,7 @@ import { ImageViewerComponent, SafePipe } from './image-viewer/image-viewer.comp
 		BackgroundTitleComponent,
 		ImageViewerComponent,
 		SafePipe,
+		CarouselComponent,
 	],
 	imports: [
 		CommonModule,
@@ -50,6 +52,7 @@ import { ImageViewerComponent, SafePipe } from './image-viewer/image-viewer.comp
 		SocialLogosComponent,
 		BackgroundTitleComponent,
 		ImageViewerComponent,
+		CarouselComponent,
 	],
 })
 export class UiToolsModule { }

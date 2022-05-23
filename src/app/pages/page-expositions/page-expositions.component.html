@@ -1,0 +1,23 @@
+<app-background-title title="EXPOSITIONS"></app-background-title>
+<div #container id="aboutDateContainer">
+	<div #sliderContainer id="sliderContainer">
+		<mat-slider #dateSlider id="dateSlider" [vertical]="true" [invert]="false"
+		[min]=0 [max]=1 [step]=0.001 [disabled]="disabled"
+		[value]="sliderValue" (input)="updateScrollPos($event.value || 0)"></mat-slider>
+		<div id="labelContainer" [style.top.px]="labelPos" [ngClass]="{'disabled': disabled}">
+			<h4 #sliderLabel id="sliderLabelLeft" class="sliderLabel">20</h4>
+			<h4 id="sliderLabelRight" class="sliderLabel">{{labelYear}}</h4>
+		</div>
+	</div>
+	<div id="textContainer">
+		<div #2020>
+			<h3 class="year">2020</h3>
+			<div class="title" style="background-image: url('assets/experiences/yt-2020.JPG');">
+				<div class="job-container">
+					<div class="job"><h4>Danseuse et chorégraphe : Création de la chaine youtube « OPHELIE »</h4>
+						<span>Publications de courtes vidéos chorégraphiques et performances expérimentales</span>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>

@@ -17,6 +17,7 @@ import { PageBiographieComponent } from './page-biographie/page-biographie.compo
 import { PageCouvertureComponent } from './page-couverture/page-couverture.component';
 import { PageCollectionsComponent } from './page-collections/page-collections.component';
 import { PageCollectionComponent } from './page-collection/page-collection.component';
+import { PageExpositionsComponent } from './page-expositions/page-expositions.component';
 
 @NgModule({
 	declarations: [
@@ -33,6 +34,7 @@ import { PageCollectionComponent } from './page-collection/page-collection.compo
 		PageCouvertureComponent,
 		PageCollectionsComponent,
 		PageCollectionComponent,
+		PageExpositionsComponent,
 	],
 	imports: [
 		CommonModule,
@@ -49,6 +51,7 @@ import { PageCollectionComponent } from './page-collection/page-collection.compo
 		PagePublicationsComponent,
 		PageAboutComponent,
 		PageExperiencesComponent,
+		PageExpositionsComponent,
 	],
 })
 export class PagesModule { }

@@ -263,5 +263,69 @@
 				]
 			}
 		]
+	},
+	"expositions": {
+		"title": "EXPOSITIONS",
+		"collections": [
+			{
+				"headerUrl": "assets/sculptures/main-header.png",
+				"url": "expo1",
+				"title": "TITRE",
+				"description": "DESCRIPTION",
+				"text": "Leur monde est fait d’abandon, de craintes, et de mélancolie.\nLes monstres sont des êtres d’une profonde solitude, des créatures secrètes ; incapables de s’exprimer par la parole, mais comblant leur silence extérieur par leur cacophonie intérieure qui s’exprime à travers leur yeux…\nIls ne ressemblent à aucun autre humain, animal ou créature connue par l’Homme, et c’est pourquoi ils ont tendance à inspirer le mépris, le dégout et la peur et sont constamment rejetés ; pour leur différence, ces différences que nous portons tous, bien qu’en apparence, ce soit moins flagrant, puisque, contrairement à eux, on s’est contraint à intégrer les normes de la société, celles qui décident la manière dont un individu « normal, sain et inoffensif » devrait paraitre, se comporter, entrer en relation, etc.. En les abandonnant, les humains ont rendu les monstres inadaptés à la vie parmi l’humanité. Alors, ils ont dû s’adapter par eux-mêmes, en réagissant à la maltraitance, aux regards méprisants et au comportement de rejet du mieux qu’ils pouvaient, en se faisant tout petit ou en manifestant physiquement leur douleur, exactement de la même façon que les êtres humains le font dans de pareilles situations. Et pourtant, tout comme les humains, ils ne souhaitent qu’être aimé et sont simplement des êtres gentils qui ont vécus, malgré eux, des traumatismes qui continuent de les suivre peu importe où ils vont, de les hanter, de les empoisonner. Humains et monstres, on partage les mêmes angoisses, les mêmes cicatrices, les mêmes douleurs… mais aussi les mêmes désirs d’émancipation, d’audace, les mêmes espoirs, aussi faibles soient-ils, car quand, comme eux, l’humanité nous a rejeté, on finit par se comprendre, se sentir proche l’un de l’autre et des liens se tissent à force de les côtoyer jusqu’à ce que les monstres deviennent notre vraie famille. Contrairement aux gens, les monstres ne mentent pas. Et leur isolement imposé leur donne une sorte de liberté macabre, mais également fascinante pour les humains emprisonnés par les exigences et la pression qu’ils s’infligent en étant persuadés que leur survie en dépend. Nous avons autant besoin d’eux, qu’eux ont besoin de nous, pour, l’un comme l’autre, éviter de se retrouver seul, livré à soi-même face à notre imagination d’une terreur insupportable et envahissante.\nCombien de fois nous sommes nous enfermés dans un placard, rejoindre les monstres qui s’y réfugient, pour se sentir nous aussi un peu plus à l’abri, pour trouver le sommeil ou pour se permettre de se sentir un peu chez soi. Fuir un moment le réel, apprivoiser notre monde intérieur, ce monde imaginaire dont on a besoin pour se développer, même devenu adulte.\nQuand on est enfant, on nous dit que les monstres n’existent pas, probablement pour nous éviter d’avoir peur, alors que l’idée de leur absence nous plonge, en réalité, dans un état de solitude bien plus terrifiant encore. Leur « irréalité » nous obligeant à questionner alors la légitimité de notre propre existence, et nous nous retrouvons abandonnés à ces humains à la méchanceté déroutante, arborant pourtant des visages angéliques, ces visages qui nous inspirent la peur de peu qu’on les ait côtoyés.\nMaintenant que je suis adulte, je me rends compte que les adultes simplifient la réalité en rejetant tous les monstres pour rassurer les enfants, alors que c’est eux qui ont peur de savoir la réalité bien plus complexe que ça. Si on acceptait que les monstres existent, et que ce n’est pas une réalité qui devrait nous faire peur, et si on arrêtait de les chasser injustement, si nous prenions simplement temps pour les comprendre, pour s’apprivoiser l’un et l’autre, nous nous retrouverons face à l’évidence que nous sommes bien plus proche d’eux que de certains humains curieusement mieux acceptés dans ce monde, nous souffriront aussi peut-être moins de nos propres différences, et la solitude ainsi que le gouffre qui l’accompagne pourront prendre un sens nouveau plus facile à supporter pour les humains ainsi que pour les monstres…",
+				"photos": [
+					{
+						"fileName": "sculptures/lapin1.jpg",
+						"title": "VICTOR",
+						"subtitle": "Ophélie Dubois, Victor, 2021, argile naturelle peinte à l’acrylique et vernie mat, 354 g, 11 x 11 x 18 cm.",
+						"description": "Victor est un monstre de la famille des Bulbopodes. Il porte une peau d’étrange lapin et passe la majorité de ses journées à écouter le sifflement du vent à travers une fenêtre à peine ouverte. Ophélie Dubois, Victor, 2021, argile naturelle peinte à l’acrylique et vernie mat, 354 g, 11 x 11 x 18 cm.",
+						"subImages": [
+							"sculptures/lapin1.jpg",
+							"sculptures/lapin2.jpg",
+							"sculptures/lapin3.jpg",
+							"sculptures/lapin4.jpg",
+							"sculptures/lapin5.jpg",
+							"sculptures/lapin6.jpg"
+						]
+					},
+					{
+						"fileName": "sculptures/escargot1.jpg",
+						"title": "LOUIS",
+						"subtitle": "Ophélie Dubois, Louis, 2021, argile naturelle peinte à l’acrylique et vernie mat, 368 g, 6 x 8 x 9,5 cm.",
+						"description": "description",
+						"subImages": [
+							"sculptures/escargot1.jpg"
+						]
+					},
+					{
+						"fileName": "sculptures/s2.jpg",
+						"title": "titre 8",
+						"subtitle": "sous-titre 8",
+						"description": "description",
+						"subImages": [
+							"sculptures/s2.jpg"
+						]
+					},
+					{
+						"fileName": "sculptures/s3.jpg",
+						"title": "titre 8",
+						"subtitle": "sous-titre 8",
+						"description": "description",
+						"subImages": [
+							"sculptures/s3.jpg"
+						]
+					},
+					{
+						"fileName": "sculptures/s4.jpg",
+						"title": "titre 8",
+						"subtitle": "sous-titre 8",
+						"description": "description",
+						"subImages": [
+							"sculptures/s4.jpg"
+						]
+					}
+				]
+			}
+		]
 	}
 }

@@ -1,0 +1,26 @@
+<div id="container">
+	<div id="presentation-container">
+		<div class="presentation noselect" id="presentation1" (mouseover)="hoverImage(centerItem)" (mouseout)="unhoverImage()"
+			[ngClass]="{'selected': currentItem === centerItem}" routerLink="{{centerItem.url}}" >
+			<div class="cadre-container">
+				<img src="{{centerItem.image}}"/>
+				<img src="{{centerItem.cadre}}" class="cadre" *ngIf="centerItem.cadre !== ''"/>
+			</div>
+		</div>
+		<div class="presentation noselect" id="presentation2" (mouseover)="hoverImage(rightItem)" (mouseout)="unhoverImage()"
+			[ngClass]="{'selected': currentItem === rightItem}" routerLink="{{rightItem.url}}">
+			<div class="cadre-container">
+				<img src="{{rightItem.image}}"/>
+				<img src="{{rightItem.cadre}}" class="cadre" *ngIf="rightItem.cadre !== ''"/>
+			</div>
+		</div>
+		<div class="presentation noselect" id="presentation3" (mouseover)="hoverImage(leftItem)" (mouseout)="unhoverImage()"
+			[ngClass]="{'selected': currentItem === leftItem}" routerLink="{{leftItem.url}}">
+			<div class="cadre-container">
+				<img src="{{leftItem.image}}"/>
+				<img src="{{leftItem.cadre}}" class="cadre" *ngIf="leftItem.cadre !== ''"/>
+			</div>
+		</div>
+	</div>
+	<h4 id="title-selected">{{hoverTitle ? hoverTitle : currentItem?.title}}</h4>
+</div>
